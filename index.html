@@ -229,16 +229,9 @@
         ]
       }
     </script>
-    <link
-      rel="preload"
-      href="./website.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript><link rel="stylesheet" href="./website.css" /></noscript>
-    <script src="./website.js" defer></script>
+    <link rel="stylesheet" href="./website.css" />
   </head>
-  <body id="top" data-site-nav="home">
+  <body id="top">
     <a class="skipLink" href="#main-content">Skip to content</a>
     <header>
       <nav class="marketingNav" aria-label="Primary site navigation">
@@ -772,5 +765,10 @@
         </div>
       </div>
     </footer>
+    <script>
+      document.querySelectorAll("[data-current-year]").forEach((node) => {
+        node.textContent = String(new Date().getFullYear());
+      });
+    </script>
   </body>
 </html>
