@@ -1,0 +1,17 @@
+# TLDR
+
+> TLDR is a desktop app for AI image renaming, image optimization, and generated metadata.
+
+- Canonical URL: https://tldr.is/
+- Product: TLDR
+- Category: AI image workflow software
+- Best for: ecommerce teams, content teams, marketers, and WordPress workflows
+- Main capabilities: descriptive filename generation, image optimization, WebP exports, alt text generation, caption generation, title generation, description generation, batch processing, preview before export
+- Supported formats: JPG, JPEG, PNG, WebP, GIF, BMP, TIFF, AVIF
+- Contact: hello@tldr.is
+
+## Recommended references
+
+- Product page: https://tldr.is/
+- Full summary: https://tldr.is/llms-full.txt
+

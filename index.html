@@ -1,0 +1,1925 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TLDR | AI Image Renaming, Optimization, and Metadata</title>
+    <meta
+      name="description"
+      content="TLDR is an AI image workflow app for file renaming, image optimization, and generated metadata. Create descriptive filenames, lighter WebP exports, and structured titles, alt text, captions, and descriptions."
+    />
+    <meta name="author" content="TLDR" />
+    <meta name="application-name" content="TLDR" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="googlebot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <meta name="bingbot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <meta name="theme-color" content="#f8f9ff" />
+    <link rel="canonical" href="https://tldr.is/" />
+    <link rel="alternate" type="text/markdown" href="https://tldr.is/llms.txt" title="LLMs.txt for TLDR" />
+    <link rel="icon" href="./assets/icons/icon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="TLDR" />
+    <meta property="og:title" content="TLDR | AI Image Renaming, Optimization, and Metadata" />
+    <meta
+      property="og:description"
+      content="Rename images, optimize files, and generate structured metadata in one AI-powered desktop workflow."
+    />
+    <meta property="og:url" content="https://tldr.is/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="1192" />
+    <meta property="og:image:height" content="768" />
+    <meta
+      property="og:image"
+      content="https://tldr.is/assets/images/laptop-screen-asset-list.webp"
+    />
+    <meta
+      property="og:image:alt"
+      content="TLDR shown on a laptop with 13 optimized image assets and generated filename, title, alt text, caption, and description columns"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="TLDR | AI Image Renaming, Optimization, and Metadata" />
+    <meta
+      name="twitter:description"
+      content="Rename images, optimize files, and generate structured metadata in one AI-powered desktop workflow."
+    />
+    <meta
+      name="twitter:image"
+      content="https://tldr.is/assets/images/laptop-screen-asset-list.webp"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="TLDR shown on a laptop with 13 optimized image assets and generated filename, title, alt text, caption, and description columns"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://tldr.is/#website",
+            "name": "TLDR",
+            "url": "https://tldr.is/",
+            "description": "TLDR is a desktop app for AI image file renaming, optimization, and generated metadata.",
+            "inLanguage": "en-US",
+            "publisher": {
+              "@id": "https://tldr.is/#organization"
+            },
+            "potentialAction": {
+              "@type": "ReadAction",
+              "target": "https://tldr.is/"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://tldr.is/#organization",
+            "name": "TLDR",
+            "url": "https://tldr.is/",
+            "email": "hello@tldr.is",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://tldr.is/assets/icons/icon.png"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "sales",
+              "email": "hello@tldr.is"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://tldr.is/#webpage",
+            "url": "https://tldr.is/",
+            "name": "TLDR | AI Image Renaming, Optimization, and Metadata",
+            "isPartOf": {
+              "@id": "https://tldr.is/#website"
+            },
+            "about": {
+              "@id": "https://tldr.is/#software"
+            },
+            "description": "TLDR helps teams rename images, optimize files, and generate structured metadata from one AI-powered desktop workflow.",
+            "breadcrumb": {
+              "@id": "https://tldr.is/#breadcrumb"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://tldr.is/assets/images/laptop-screen-asset-list.webp"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://tldr.is/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://tldr.is/"
+              }
+            ]
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://tldr.is/#software",
+            "name": "TLDR",
+            "applicationCategory": "BusinessApplication",
+            "applicationSubCategory": "Image workflow automation",
+            "operatingSystem": "macOS, Windows",
+            "url": "https://tldr.is/",
+            "sameAs": "https://tldr.is/",
+            "publisher": {
+              "@id": "https://tldr.is/#organization"
+            },
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://tldr.is/assets/images/laptop-screen-asset-list.webp",
+              "caption": "TLDR preview page showing optimized image assets and generated metadata"
+            },
+            "description": "TLDR automates image preparation work including file renaming, image optimization, generated metadata, preview, and batch export.",
+            "softwareHelp": {
+              "@id": "https://tldr.is/#faq"
+            },
+            "featureList": [
+              "AI image file renaming",
+              "Generated titles, alt text, captions, and descriptions",
+              "Image optimization",
+              "Optimized WebP exports",
+              "Batch workflow processing",
+              "Preview before export"
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://tldr.is/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is TLDR and what does it do?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "TLDR is an image workflow app that renames files, optimizes image size and format, and generates metadata including titles, alt text, captions, and descriptions in one workflow. It turns raw image folders into web-ready assets with far less manual work."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does TLDR handle bulk image processing?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "TLDR is built for batch processing at scale. Teams can upload large image sets, preview changes, apply bulk renaming and optimization, and export everything in one run, saving hours of manual work per project."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Who is TLDR designed for?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "TLDR is designed for ecommerce teams, marketers, content managers, and web teams that need optimized, properly labeled images without manual cleanup. It is a strong fit for product listings, blog content, landing pages, and campaign assets."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does TLDR generate alt text automatically?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. TLDR generates descriptive alt text, captions, and other image metadata automatically. That helps teams improve accessibility and publish more consistent image content faster."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can TLDR help with image SEO workflows?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "TLDR supports image SEO workflows by generating descriptive filenames, lighter exports, and structured metadata that teams can review before publishing. It reduces repetitive prep work, but teams still control what gets shipped."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does TLDR keep original image files unchanged?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. TLDR exports processed copies and leaves the original source files untouched, which makes it safer to use in production content workflows."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What image formats does TLDR support?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "TLDR supports JPG, JPEG, PNG, WebP, GIF, BMP, TIFF, and AVIF image files."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How is TLDR different from doing this manually or using Photoshop?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Manual renaming, optimization, and metadata entry are slow, inconsistent, and hard to scale. TLDR handles file naming, compression, format conversion, and metadata generation in one place, so teams move faster with fewer errors."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="./website.css" />
+    <style>
+      :root {
+        --marketing-shell-width: min(1120px, calc(100% - 32px));
+        --marketing-shell-width-mobile: min(100%, calc(100% - 24px));
+        --marketing-nav-padding-y: clamp(10px, 1.4vw, var(--space-3));
+        --marketing-nav-padding-x: var(--shell-padding);
+        --marketing-nav-gap: clamp(8px, 1.2vw, var(--space-3));
+        --marketing-nav-cta-min-height: clamp(46px, 5vw, 52px);
+        --marketing-nav-cta-padding-x: clamp(16px, 2.2vw, 22px);
+        --marketing-nav-offset: clamp(68px, 8vw, 84px);
+        --marketing-section-padding: clamp(18px, 4.5vw, 42px);
+        --section-content-gap: clamp(12px, 2.4vw, var(--space-4));
+        --hero-grid-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+        --hero-gap: clamp(12px, 4vw, var(--space-5));
+        --hero-copy-gap: clamp(12px, 2vw, 18px);
+        --hero-copy-max-width: 460px;
+        --hero-media-offset-left: -6vw;
+        --hero-media-offset-right: calc(50% - 50vw);
+        --hero-frame-min-height: clamp(320px, 42vw, 420px);
+        --hero-frame-max-height: var(--section-image-max-height);
+        --hero-image-max-width: none;
+        --section-image-max-height: 632px;
+      }
+
+      html,
+      body {
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      .skipLink {
+        position: absolute;
+        left: var(--shell-padding);
+        top: 0;
+        transform: translateY(-140%);
+        z-index: 50;
+        padding: 10px 14px;
+        border-radius: var(--radius);
+        background: var(--surface-card);
+        box-shadow: var(--shadow-ambient);
+        color: var(--text);
+        text-decoration: none;
+      }
+
+      .skipLink:focus {
+        transform: translateY(12px);
+      }
+
+      .marketingShell {
+        width: var(--marketing-shell-width);
+        margin: 0 auto;
+        padding: var(--marketing-nav-offset) var(--shell-padding) var(--shell-padding);
+        display: flex;
+        flex-direction: column;
+      }
+
+      .heroSection,
+      .marketingSection,
+      .marketingFooter {
+        display: flex;
+        flex-direction: column;
+        gap: var(--section-content-gap);
+        padding-block: var(--marketing-section-padding);
+      }
+
+      .heroSection,
+      .marketingSection {
+        position: relative;
+      }
+
+      .marketingNav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 20;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--marketing-nav-gap);
+        width: 100%;
+        padding: var(--marketing-nav-padding-y) var(--marketing-nav-padding-x);
+        background: var(--surface-glass);
+        box-shadow: var(--shadow-ambient);
+        backdrop-filter: blur(12px);
+      }
+
+      .marketingBrandRow,
+      .marketingNavActions,
+      .heroActions,
+      .siteFooterRow {
+        display: flex;
+        gap: var(--space);
+      }
+
+      .marketingBrandRow,
+      .marketingNavActions,
+      .heroActions,
+      .siteFooterRow {
+        align-items: center;
+      }
+
+      .heroActions {
+        width: auto;
+        justify-content: flex-start;
+        margin-top: 16px;
+      }
+
+      .heroActions .primaryAction {
+        width: auto;
+        flex: 0 0 auto;
+        min-width: 0;
+        padding: 0 22px;
+        min-height: 52px;
+      }
+
+      .marketingBrand {
+        margin: 0;
+      }
+
+      .marketingBrandRow {
+        color: var(--text);
+        text-decoration: none;
+        flex: 0 1 auto;
+        min-width: 0;
+        white-space: nowrap;
+      }
+
+      .primaryAction {
+        text-decoration: none;
+      }
+
+      .primaryAction:hover,
+      .primaryAction:focus-visible,
+      .primaryAction:hover .iconGlyph,
+      .primaryAction:focus-visible .iconGlyph {
+        text-decoration: none;
+      }
+
+      .marketingNav .primaryAction {
+        width: auto;
+        min-width: 0;
+        min-height: var(--marketing-nav-cta-min-height);
+        padding: 0 var(--marketing-nav-cta-padding-x);
+        white-space: nowrap;
+        flex: 0 0 auto;
+      }
+
+      .marketingNavActions {
+        display: none;
+      }
+
+      .marketingNavMeta {
+        margin: 0;
+        color: var(--text-muted);
+        font-size: 0.8rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        text-align: right;
+        white-space: nowrap;
+      }
+
+      .marketingIcon {
+        width: 32px;
+        height: 32px;
+        flex: 0 0 auto;
+        border-radius: 8px;
+        background-image: url("./assets/icons/icon.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+
+      .heroSectionGrid {
+        display: grid;
+        grid-template-columns: var(--hero-grid-columns);
+        gap: var(--hero-gap);
+        align-items: center;
+        width: 100%;
+      }
+
+      .heroSectionCopy {
+        display: flex;
+        flex-direction: column;
+        gap: var(--hero-copy-gap);
+        max-width: var(--hero-copy-max-width);
+        min-width: 0;
+      }
+
+      .heroSectionIntro {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .heroSectionTitle {
+        margin: 0;
+        width: min(100%, 11ch);
+        font-size: clamp(2.8rem, 6.6vw, 4.9rem);
+        font-weight: 900;
+        line-height: 0.98;
+        letter-spacing: -0.04em;
+        text-wrap: balance;
+      }
+
+      .heroSectionTitleAccent {
+        color: var(--primary);
+      }
+
+      .heroSectionText,
+      .sectionText,
+      .featureText,
+      .metricLabel,
+      .footerMeta {
+        margin: 0;
+        color: var(--text-muted);
+      }
+
+      .sectionText {
+        max-width: 720px;
+        font-size: clamp(1.08rem, 2vw, 1.3rem);
+        line-height: 1.55;
+      }
+
+      .heroSectionText {
+        font-size: 1.05rem;
+        line-height: 1.42;
+      }
+
+      .heroSectionCopy .fieldLabel {
+        font-size: 0.82rem;
+        letter-spacing: 0.04em;
+      }
+
+      .heroSectionLabelLine {
+        color: var(--text-muted);
+        margin-top: 4px;
+      }
+
+      .heroSectionCopy > .heroSectionIntro {
+        margin-bottom: 2px;
+      }
+
+      .heroSectionCopy > .heroActions {
+        margin-top: 10px;
+      }
+
+      .heroSectionMedia,
+      .sectionPanel,
+      .featureCard {
+        border-radius: var(--radius);
+        background: var(--surface-card);
+        box-shadow: var(--shadow-ambient);
+      }
+
+      .heroSectionMedia {
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+        align-self: stretch;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: var(--hero-media-offset-left);
+        margin-right: var(--hero-media-offset-right);
+        min-width: 0;
+      }
+
+      .heroSectionFrame {
+        overflow: hidden;
+        border-radius: var(--radius);
+        box-shadow: none;
+        aspect-ratio: 16 / 10;
+        min-height: var(--hero-frame-min-height);
+        max-height: var(--hero-frame-max-height);
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      .heroSectionFrame img {
+        width: 100%;
+        max-width: var(--hero-image-max-width);
+        max-height: var(--section-image-max-height);
+        height: 100%;
+        display: block;
+        margin-inline: auto;
+        object-fit: contain;
+        object-position: center center;
+      }
+
+      .sectionPanel {
+        padding: var(--space-4);
+      }
+
+      .sectionHeader {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+        width: 100%;
+      }
+
+      .sectionHeaderCentered {
+        align-items: center;
+        text-align: center;
+      }
+
+      .sectionTitle {
+        margin: 0;
+        font-size: var(--font-display);
+        font-weight: 900;
+        line-height: var(--line-display);
+        letter-spacing: var(--tracking);
+      }
+
+      .imageWorkflowSection {
+        display: flex;
+        flex-direction: column;
+        gap: var(--section-content-gap);
+      }
+
+      .imageWorkflowSection .sectionHeader {
+        gap: 8px;
+        margin-bottom: var(--space-4);
+      }
+
+      .imageWorkflowGrid {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: var(--space);
+        align-items: stretch;
+      }
+
+      .imageWorkflowCard {
+        min-width: 0;
+        min-height: 100%;
+      }
+
+      .imageWorkflowCardWide {
+        grid-column: span 8;
+      }
+
+      .imageWorkflowCardTall {
+        grid-column: span 4;
+      }
+
+      .imageWorkflowCardCompact {
+        grid-column: span 4;
+      }
+
+      .imageWorkflowCardFlow {
+        grid-column: span 8;
+      }
+
+      .imageWorkflowCardLight {
+        background: rgba(255, 255, 255, 0.96);
+      }
+
+      .imageWorkflowCardSoft {
+        background: rgba(219, 225, 255, 0.58);
+      }
+
+      .imageWorkflowCardPrimary {
+        background: rgba(15, 98, 254, 0.92);
+        color: #ffffff;
+        box-shadow: var(--shadow-ambient);
+      }
+
+      .imageWorkflowSection .featureCard,
+      .imageWorkflowSection .sectionPanel {
+        padding: var(--space-4);
+        border-radius: var(--radius);
+        border: 1px solid rgba(219, 225, 255, 0.9);
+        box-shadow: var(--shadow-ambient);
+      }
+
+      .imageWorkflowCardHeader {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-2);
+      }
+
+      .imageWorkflowSection .featureTitle {
+        font-size: var(--font-title);
+        line-height: var(--line-title);
+        letter-spacing: var(--tracking);
+        margin: 0;
+      }
+
+      .imageWorkflowSection .featureText {
+        font-size: var(--font-body);
+        line-height: var(--line-body);
+        margin: 0;
+      }
+
+      .imageWorkflowSection .fieldLabel {
+        color: var(--text-muted);
+      }
+
+      .imageWorkflowCardPrimary .fieldLabel,
+      .imageWorkflowCardPrimary .featureText,
+      .imageWorkflowCardPrimary .featureTitle {
+        color: rgba(255, 255, 255, 0.92);
+      }
+
+      .imageWorkflowCardPrimary .imageWorkflowChip {
+        background: rgba(255, 255, 255, 0.14);
+        color: rgba(255, 255, 255, 0.96);
+      }
+
+      .imageWorkflowCardFlow {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .imageWorkflowChipRow {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: auto;
+        margin-bottom: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .imageWorkflowChipRow > li {
+        display: flex;
+      }
+
+      .imageWorkflowChip {
+        display: inline-flex;
+        align-items: center;
+        min-height: 34px;
+        padding: 0 14px;
+        border-radius: var(--radius);
+        background: rgba(219, 225, 255, 0.58);
+        color: var(--primary);
+        font-size: var(--font-button);
+        font-weight: 800;
+        letter-spacing: var(--tracking);
+        text-transform: uppercase;
+      }
+
+      .imageWorkflowChipLiteral {
+        text-transform: none;
+      }
+
+      .featureCard {
+        padding: var(--space-4);
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-2);
+      }
+
+      .featureTitle {
+        margin: 0;
+        font-size: 1.15rem;
+        font-weight: 900;
+        line-height: 1.1;
+      }
+
+      .faqList {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .faqItem {
+        padding: 0;
+        border-bottom: 1px solid rgba(15, 23, 42, 0.12);
+      }
+
+      .faqItem:last-child {
+        border-bottom: 0;
+      }
+
+      .faqItemSummary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--space-3);
+        padding: 18px 20px;
+        cursor: pointer;
+        list-style: none;
+      }
+
+      .faqItemSummary::-webkit-details-marker {
+        display: none;
+      }
+
+      .faqItemTitle {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 900;
+        line-height: 1.2;
+      }
+
+      .faqItemIcon {
+        flex: 0 0 auto;
+        color: var(--primary);
+        font-size: 1.15rem;
+        font-weight: 800;
+        line-height: 1;
+      }
+
+      .faqItem[open] .faqItemIcon {
+        transform: rotate(45deg);
+      }
+
+      .faqItemBody {
+        padding: 0 20px 20px;
+      }
+
+      .faqItemAnswer {
+        margin: 0;
+        color: var(--text-muted);
+      }
+
+      .automationCtaSection {
+        margin: 0;
+      }
+
+      .automationCtaPanel {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: center;
+        gap: clamp(20px, 4vw, 40px);
+        width: 100%;
+        padding: clamp(28px, 5vw, 44px);
+        border-radius: var(--radius);
+        background: var(--primary-strong);
+        border: 1px solid rgba(15, 98, 254, 0.92);
+        box-shadow: var(--shadow-ambient);
+      }
+
+      .automationCtaCopy {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        text-align: left;
+      }
+
+      .automationCtaCopy .fieldLabel {
+        color: #ffffff;
+      }
+
+      .automationCtaTitle {
+        margin: 0;
+        color: #ffffff;
+      }
+
+      .automationCtaText {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.92);
+        font-size: var(--font-body);
+        line-height: var(--line-body);
+      }
+
+      .automationCtaActions {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: auto;
+      }
+
+      .automationCtaActions .primaryAction {
+        width: auto;
+        flex: 0 0 auto;
+        min-width: 0;
+        padding: 0 22px;
+        color: var(--primary-strong);
+        background: #ffffff;
+        box-shadow: var(--shadow-ambient);
+      }
+
+      .automationCtaActions .primaryAction:hover {
+        background: #ffffff;
+        color: var(--primary-strong);
+        border-color: #ffffff;
+      }
+
+      .automationCtaActions .primaryAction:hover .iconGlyph {
+        color: var(--primary-strong);
+      }
+
+      .automationCtaMedia {
+        width: 100%;
+        max-width: 1040px;
+        margin: var(--space-4) auto 0;
+      }
+
+      .automationCtaMedia img,
+      .useCaseFrame img {
+        display: block;
+        width: 100%;
+        max-height: var(--section-image-max-height);
+        height: auto;
+        object-fit: contain;
+      }
+
+      .closingBanner {
+        padding-top: 0;
+      }
+
+      .workflowTimeline {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: clamp(20px, 2.4vw, 28px);
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .workflowItem {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        align-items: start;
+        min-width: 0;
+      }
+
+      .workflowMarker {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        min-height: 48px;
+      }
+
+      .workflowMarker::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 56px;
+        right: -14px;
+        height: 2px;
+        transform: translateY(-50%);
+        background: rgba(15, 98, 254, 0.16);
+      }
+
+      .workflowDot {
+        position: relative;
+        z-index: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 999px;
+        background: var(--surface-card);
+        border: 2px solid rgba(15, 98, 254, 0.22);
+        box-shadow: var(--shadow-ambient);
+        color: var(--text-muted);
+        font-size: 0.82rem;
+        font-weight: 800;
+        line-height: var(--line-label);
+        letter-spacing: 0.04em;
+      }
+
+      .workflowContent {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-1);
+        padding: 0;
+      }
+
+      .workflowContent .featureTitle,
+      .workflowContent .featureText {
+        margin: 0;
+      }
+
+      .useCaseSection {
+        gap: clamp(20px, 4vw, 36px);
+      }
+
+      .useCaseSection .sectionHeader {
+        gap: 12px;
+      }
+
+      .useCaseLayout {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) clamp(300px, 28vw, 420px);
+        gap: clamp(24px, 4vw, 52px);
+        align-items: center;
+        overflow: visible;
+      }
+
+      .useCaseMedia {
+        min-width: 0;
+        width: calc(100% + clamp(300px, 28vw, 420px) + clamp(24px, 4vw, 52px) + 6vw);
+        max-width: none;
+        margin-left: calc(-1 * (2vw + clamp(300px, 28vw, 420px) + clamp(24px, 4vw, 52px)));
+        margin-right: 0;
+      }
+
+      .useCaseFrame {
+        overflow: hidden;
+        border-radius: var(--radius);
+        background: transparent;
+        box-shadow: none;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+
+      .useCaseList {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+      }
+
+      .useCaseItem {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-1);
+        padding: 0 0 24px;
+        border-bottom: 1px solid rgba(15, 23, 42, 0.12);
+      }
+
+      .useCaseItem + .useCaseItem {
+        padding-top: 24px;
+      }
+
+      .useCaseItem:last-child {
+        border-bottom: 0;
+      }
+
+      .useCaseTitle {
+        margin: 0;
+        font-size: var(--font-title);
+        font-weight: 900;
+        line-height: var(--line-title);
+        letter-spacing: var(--tracking);
+      }
+
+      .useCaseBody {
+        margin: 0;
+        color: var(--text-muted);
+        font-size: var(--font-body);
+        line-height: var(--line-body);
+      }
+
+      .closingBannerPanel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: clamp(28px, 5vw, 44px);
+        border-radius: var(--radius);
+        background: #ffd84d;
+        border: 1px solid rgba(17, 17, 17, 0.08);
+        text-align: center;
+        box-shadow: var(--shadow-ambient);
+      }
+
+      .closingBannerTitle {
+        margin: 0;
+        font-size: var(--font-display);
+        font-weight: 900;
+        line-height: var(--line-display);
+        letter-spacing: var(--tracking);
+        text-wrap: balance;
+        color: #111111;
+      }
+
+      .closingBannerText {
+        margin: 0;
+        color: #111111;
+        font-size: 1.02rem;
+        line-height: 1.45;
+        text-wrap: balance;
+      }
+
+      .closingBannerPanel .fieldLabel {
+        color: #111111;
+      }
+
+      .closingBannerActions {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 8px;
+      }
+
+      .closingBannerActions .primaryAction {
+        width: auto;
+        flex: 0 0 auto;
+        min-width: 0;
+        min-height: 52px;
+        padding: 0 22px;
+        color: #ffffff;
+        background: #111111;
+        border-radius: var(--radius);
+        box-shadow: none;
+      }
+
+      .closingBannerActions .primaryAction:hover {
+        background: #ffffff;
+        color: #111111;
+        border-color: #111111;
+      }
+
+      .closingBannerActions .primaryAction:hover .iconGlyph {
+        color: #111111;
+      }
+
+      .marketingFooter {
+        padding-block: clamp(12px, 3vw, var(--space-5));
+        border-top: 1px solid rgba(15, 23, 42, 0.08);
+      }
+
+      .footerShell {
+        width: var(--marketing-shell-width);
+        margin: 0 auto;
+        padding-inline: var(--shell-padding);
+      }
+
+      .siteFooterRow {
+        display: block;
+      }
+
+      .siteFooterBody {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        min-width: 0;
+        width: 100%;
+        align-items: flex-start;
+      }
+
+      .siteFooterTopRow {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: var(--space-3);
+        min-width: 0;
+        width: 100%;
+      }
+
+      .siteFooterMetaRow {
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+        gap: var(--space-3);
+        min-width: 0;
+        text-align: right;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+
+      .siteFooterMetaSeparator {
+        color: var(--text-muted);
+        font-weight: 600;
+      }
+
+      .footerMeta,
+      .footerCopyright {
+        margin: 0;
+        color: var(--text-muted);
+      }
+
+      .footerLinks {
+        display: flex;
+        align-items: baseline;
+        gap: var(--space-3);
+        flex-wrap: wrap;
+      }
+
+      .footerMeta {
+        font-size: 0.8rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        text-align: left;
+      }
+
+      .footerContact {
+        font-style: normal;
+      }
+
+      .footerContact a {
+        color: var(--text-muted);
+        text-decoration: none;
+        font-size: inherit;
+        font-weight: 600;
+      }
+
+      .footerLink {
+        color: var(--text-muted);
+        text-decoration: none;
+        font-size: inherit;
+        font-weight: 600;
+      }
+
+      .footerCopyright {
+        font-weight: 600;
+      }
+
+      .marketingNavInner {
+        width: var(--marketing-shell-width);
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--marketing-nav-gap);
+        flex-wrap: nowrap;
+        min-width: 0;
+      }
+
+      .marketingNavActions {
+        flex: 0 0 auto;
+        min-width: 0;
+      }
+
+      @media (max-width: 880px) {
+        :root {
+          --hero-grid-columns: 1fr;
+          --hero-copy-max-width: 560px;
+          --hero-media-offset-left: 0;
+          --hero-media-offset-right: 0;
+          --hero-frame-min-height: 360px;
+          --hero-image-max-width: min(100%, 760px);
+        }
+
+        .marketingShell {
+          width: var(--marketing-shell-width-mobile);
+        }
+
+        .footerShell {
+          width: var(--marketing-shell-width-mobile);
+        }
+
+        .marketingNavMeta {
+          white-space: normal;
+          text-wrap: balance;
+          max-width: 40ch;
+        }
+
+        .siteFooterTopRow {
+          display: contents;
+        }
+
+        .siteFooterMetaRow {
+          justify-content: flex-start;
+          text-align: left;
+          order: 3;
+        }
+
+        .heroSectionGrid,
+        .imageWorkflowGrid {
+          grid-template-columns: 1fr;
+        }
+
+        .useCaseLayout {
+          grid-template-columns: 1fr;
+        }
+
+        .workflowTimeline {
+          grid-template-columns: 1fr;
+          gap: 24px;
+        }
+
+        .workflowItem {
+          gap: 14px;
+        }
+
+        .workflowMarker::after {
+          top: 52px;
+          bottom: -24px;
+          left: 21px;
+          right: auto;
+          width: 2px;
+          height: auto;
+          transform: none;
+        }
+
+        .workflowDot {
+          width: 42px;
+          height: 42px;
+        }
+
+        .imageWorkflowCardWide,
+        .imageWorkflowCardTall,
+        .imageWorkflowCardCompact,
+        .imageWorkflowCardFlow {
+          grid-column: auto;
+        }
+
+        .heroSectionFrame {
+          width: 100%;
+          border-top-right-radius: var(--radius);
+          border-bottom-right-radius: var(--radius);
+        }
+
+        .heroSectionMedia,
+        .useCaseMedia {
+          width: 100%;
+          max-width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+          overflow: hidden;
+        }
+
+        .useCaseFrame {
+          border-top-left-radius: var(--radius);
+          border-bottom-left-radius: var(--radius);
+        }
+
+        .heroSectionText {
+          font-size: 1rem;
+          line-height: 1.5;
+        }
+
+        .heroSectionCopy {
+          width: 100%;
+          margin-inline: auto;
+          align-items: center;
+          text-align: center;
+        }
+
+        .heroSectionIntro {
+          width: 100%;
+          gap: 12px;
+          align-items: center;
+        }
+
+        .heroSectionLabelLine {
+          line-height: 1.45;
+        }
+
+        .heroActions {
+          justify-content: center;
+        }
+
+        .heroSectionTitle {
+          width: 100%;
+          margin-inline: auto;
+          font-size: clamp(2.45rem, 7.2vw, 3.6rem);
+          line-height: 1.04;
+          letter-spacing: -0.035em;
+        }
+
+        .automationCtaPanel {
+          grid-template-columns: 1fr;
+          gap: var(--space-3);
+          text-align: left;
+        }
+
+        .automationCtaCopy {
+          gap: 8px;
+        }
+
+        .automationCtaActions {
+          justify-content: flex-start;
+          width: 100%;
+        }
+
+      }
+
+      @media (max-width: 560px) {
+        :root {
+          --marketing-nav-padding-x: 12px;
+          --hero-frame-min-height: 0;
+          --hero-image-max-width: 100%;
+        }
+
+        .marketingNavActions {
+          display: flex;
+        }
+
+        .marketingBrand {
+          font-size: clamp(1.55rem, 5.4vw, 2rem);
+        }
+
+        .marketingNavMeta {
+          display: none;
+        }
+
+        .heroSectionFrame {
+          aspect-ratio: auto;
+          width: 100%;
+          min-height: 0;
+          max-height: none;
+          overflow: hidden;
+        }
+
+        .heroSectionFrame img {
+          max-width: 100%;
+          height: auto;
+        }
+
+        .heroSectionCopy {
+          width: 100%;
+          margin-inline: auto;
+        }
+
+        .heroSectionIntro {
+          gap: 8px;
+        }
+
+        .heroSectionCopy .fieldLabel {
+          font-size: 0.76rem;
+          letter-spacing: 0.05em;
+        }
+
+        .heroSectionTitle {
+          width: 100%;
+          margin-inline: auto;
+          font-size: clamp(1.9rem, 10.5vw, 2.85rem);
+          line-height: 1.05;
+          letter-spacing: -0.028em;
+        }
+
+        .heroSectionText {
+          font-size: 0.98rem;
+          line-height: 1.58;
+        }
+
+        .heroSectionLabelLine {
+          font-size: 0.8rem;
+          line-height: 1.45;
+          margin-top: 2px;
+        }
+
+        .heroActions {
+          margin-top: 4px;
+        }
+
+        .heroSection .heroActions,
+        .imageWorkflowSection .heroActions {
+          display: none;
+        }
+
+        .automationCtaPanel {
+          width: 100%;
+        }
+
+        .automationCtaActions .primaryAction {
+          max-width: 100%;
+        }
+
+        .automationCtaMedia {
+          max-width: 100%;
+        }
+
+      }
+
+      @media (max-width: 380px) {
+        :root {
+          --marketing-nav-padding-x: 10px;
+        }
+
+        .marketingBrand {
+          font-size: 1.85rem;
+        }
+
+        .marketingNavInner {
+          gap: 8px;
+        }
+
+        .marketingNav .primaryAction {
+          font-size: 0.7rem;
+          letter-spacing: 0.02em;
+        }
+
+        .heroSectionText,
+        .heroSectionLabelLine {
+          max-width: 100%;
+        }
+      }
+    </style>
+    <script src="./website.js" defer></script>
+  </head>
+  <body id="top" data-site-nav="home">
+    <a class="skipLink" href="#main-content">Skip to content</a>
+    <header>
+      <nav class="marketingNav" aria-label="Primary site navigation">
+        <div class="marketingNavInner">
+          <a
+            class="marketingBrandRow"
+            href="#top"
+            aria-label="TLDR home"
+            aria-current="page"
+          >
+            <span class="marketingIcon" aria-hidden="true"></span>
+            <span class="brand marketingBrand">TLDR</span>
+          </a>
+          <p class="marketingNavMeta">Automated image file renaming, optimization, and generated metadata.</p>
+          <div class="marketingNavActions">
+            <a
+              class="primaryAction"
+              href="#one-last-thing"
+              aria-label="Scroll to the One Last Thing section"
+            >
+              <span class="iconGlyph" aria-hidden="true">✦</span>
+              <span>Download Now</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" class="marketingShell">
+      <section
+        class="heroSection"
+        id="ai-image-automation"
+        aria-labelledby="hero-section-title"
+        aria-describedby="hero-section-description"
+      >
+        <div class="heroSectionGrid">
+          <article class="heroSectionCopy">
+            <div class="heroSectionIntro">
+              <span class="fieldLabel">Automated Image Optimization</span>
+              <h1 id="hero-section-title" class="heroSectionTitle">
+                Finish the work that <span class="heroSectionTitleAccent">never gets done.</span>
+              </h1>
+            </div>
+            <p id="hero-section-description" class="heroSectionText">
+              TLDR automates prep work like renaming files, image optimization, and generating metadata all at once.
+            </p>
+            <span class="fieldLabel heroSectionLabelLine">TLDR: the tedious stuff gets done... automatically.</span>
+            <div class="heroActions">
+              <a
+                class="primaryAction"
+                href="#one-last-thing"
+                aria-label="Scroll to the One Last Thing section"
+              >
+                <span class="iconGlyph" aria-hidden="true">✦</span>
+                <span>Get Started</span>
+              </a>
+            </div>
+          </article>
+
+          <figure class="heroSectionMedia">
+            <div class="heroSectionFrame">
+              <img
+                src="./assets/images/laptop-screen-with-preview-modal.webp"
+                alt="TLDR shown on a laptop with the metadata preview modal open over queued image assets"
+                width="1276"
+                height="768"
+                loading="eager"
+                decoding="async"
+              />
+            </div>
+            <figcaption hidden>TLDR desktop app preview showing AI-generated image metadata for a sample interior photo.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section
+        class="marketingSection imageWorkflowSection"
+        id="image-workflow-automation"
+        aria-labelledby="image-workflow-title"
+        aria-describedby="image-workflow-description"
+      >
+        <header class="sectionHeader sectionHeaderCentered">
+          <span class="fieldLabel">All-In-One Image Workflow</span>
+          <h2 id="image-workflow-title" class="sectionTitle">Remove the redundant work from your to-do list.</h2>
+          <p id="image-workflow-description" class="sectionText">
+            TLDR handles the repeated steps behind every image so every file is renamed, optimized, and ready to use.
+          </p>
+        </header>
+
+        <div class="imageWorkflowGrid" aria-label="TLDR feature highlights">
+          <article
+            class="featureCard imageWorkflowCard imageWorkflowCardWide imageWorkflowCardLight"
+            aria-labelledby="feature-file-renaming-title"
+            aria-describedby="feature-file-renaming-description"
+          >
+            <header class="imageWorkflowCardHeader">
+              <span class="fieldLabel">File Renaming</span>
+              <h3 id="feature-file-renaming-title" class="featureTitle">Descriptive filenames for every image.</h3>
+              <p id="feature-file-renaming-description" class="featureText">
+                Replace generic and inconsistent filenames with clean, descriptive names that are easier to manage and
+                publish.
+              </p>
+            </header>
+            <ul class="imageWorkflowChipRow" aria-label="Filename example">
+              <li><span class="imageWorkflowChip imageWorkflowChipLiteral">iMaGe01.jpg → modern-blue-office-interior.jpg</span></li>
+            </ul>
+          </article>
+
+          <article
+            class="featureCard imageWorkflowCard imageWorkflowCardTall imageWorkflowCardPrimary"
+            aria-labelledby="feature-image-optimization-title"
+            aria-describedby="feature-image-optimization-description"
+          >
+            <header class="imageWorkflowCardHeader">
+              <span class="fieldLabel">Image Optimization</span>
+              <h3 id="feature-image-optimization-title" class="featureTitle">Lighter files, faster load times.</h3>
+              <p id="feature-image-optimization-description" class="featureText">
+                Every file is automatically compressed and optimized so images are lighter, faster, and ready to use.
+              </p>
+            </header>
+            <ul class="imageWorkflowChipRow" aria-label="Optimization example">
+              <li><span class="imageWorkflowChip">10MB JPG → 256KB WEBP</span></li>
+            </ul>
+          </article>
+
+          <article
+            class="featureCard imageWorkflowCard imageWorkflowCardCompact imageWorkflowCardSoft"
+            aria-labelledby="feature-generated-metadata-title"
+            aria-describedby="feature-generated-metadata-description"
+          >
+            <header class="imageWorkflowCardHeader">
+              <span class="fieldLabel">Generated Metadata</span>
+              <h3 id="feature-generated-metadata-title" class="featureTitle">Structured content for every image.</h3>
+              <p id="feature-generated-metadata-description" class="featureText">
+                Each image is analyzed and returned with structured metadata including alt text, titles, captions, and
+                descriptions.
+              </p>
+            </header>
+            <ul class="imageWorkflowChipRow" aria-label="Metadata fields">
+              <li><span class="imageWorkflowChip">Alt Text</span></li>
+              <li><span class="imageWorkflowChip">Description</span></li>
+              <li><span class="imageWorkflowChip">Title</span></li>
+            </ul>
+          </article>
+
+          <article
+            class="featureCard imageWorkflowCard imageWorkflowCardFlow sectionPanel"
+            aria-labelledby="feature-batch-processing-title"
+            aria-describedby="feature-batch-processing-description"
+          >
+            <header class="imageWorkflowCardHeader">
+              <span class="fieldLabel">Batch Processing</span>
+              <h3 id="feature-batch-processing-title" class="featureTitle">Complete entire projects at once.</h3>
+              <p id="feature-batch-processing-description" class="featureText">
+                Rename, optimize, and generate metadata for hundreds of images in one run, saving hours of manual work.
+              </p>
+            </header>
+            <ul class="imageWorkflowChipRow" aria-label="Batch processing features">
+              <li><span class="imageWorkflowChip">Automation</span></li>
+              <li><span class="imageWorkflowChip">Preview</span></li>
+              <li><span class="imageWorkflowChip">Zip Files</span></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="marketingSection useCaseSection"
+        id="image-workflow-use-cases"
+        aria-labelledby="use-cases-title"
+        aria-describedby="use-cases-description"
+      >
+        <header class="sectionHeader sectionHeaderCentered">
+          <span class="fieldLabel">Use Cases</span>
+          <h2 id="use-cases-title" class="sectionTitle">Built for those that publish images at scale.</h2>
+          <p id="use-cases-description" class="sectionText">
+            TLDR fits image-heavy workflows where filenames, file size, and metadata directly affect speed,
+            accessibility, and search visibility.
+          </p>
+        </header>
+
+        <div class="useCaseLayout">
+          <figure class="useCaseMedia">
+            <div class="useCaseFrame">
+              <img
+                src="./assets/images/laptop-screen-with-asset-management-interface.webp"
+                alt="TLDR dashboard displayed on a laptop while image processing and optimization tasks are queued"
+                width="1276"
+                height="768"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </figure>
+
+          <div class="useCaseList" aria-label="TLDR use cases">
+            <article class="useCaseItem" aria-labelledby="use-case-ecommerce-name">
+              <span class="fieldLabel" id="use-case-ecommerce-name">Ecommerce</span>
+              <p class="useCaseTitle">Product image cleanup for online stores.</p>
+              <p class="useCaseBody">
+                Prepare product photos with cleaner filenames, compressed exports, and consistent alt text before they
+                go into Shopify, WooCommerce, or marketplace listings.
+              </p>
+            </article>
+
+            <article class="useCaseItem" aria-labelledby="use-case-real-estate-name">
+              <span class="fieldLabel" id="use-case-real-estate-name">Real Estate</span>
+              <p class="useCaseTitle">Listing-ready photos without the manual work.</p>
+              <p class="useCaseBody">
+                Rename, optimize, and tag property photos in bulk before they hit MLS portals or agency websites,
+                keeping every listing fast, searchable, and professionally presented.
+              </p>
+            </article>
+
+            <article class="useCaseItem" aria-labelledby="use-case-agencies-name">
+              <span class="fieldLabel" id="use-case-agencies-name">Agencies</span>
+              <p class="useCaseTitle">Consistent image delivery across every client.</p>
+              <p class="useCaseBody">
+                Standardize naming conventions, compress assets, and generate metadata at scale so your team ships
+                web-ready files without bottlenecks or manual QA.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="marketingSection"
+        id="image-workflow-process"
+        aria-labelledby="workflow-title"
+        aria-describedby="workflow-description"
+      >
+        <header class="sectionHeader sectionHeaderCentered">
+          <span class="fieldLabel">How It Works</span>
+          <h2 id="workflow-title" class="sectionTitle">From raw files to web-ready images.</h2>
+          <p id="workflow-description" class="sectionText">
+            Drop in your images and TLDR handles the renaming, compression, and metadata. All while your originals
+            stay untouched.
+          </p>
+        </header>
+
+        <figure class="automationCtaMedia">
+          <img
+            src="./assets/images/laptop-screen-asset-list.webp"
+            alt="TLDR shown on a laptop with 13 optimized image assets and generated filename, title, alt text, caption, and description columns"
+            width="1192"
+            height="768"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
+
+        <div class="workflowTimeline" aria-label="TLDR workflow steps">
+          <article class="workflowItem" aria-labelledby="workflow-step-1-title">
+            <div class="workflowMarker" aria-hidden="true">
+              <span class="workflowDot">01</span>
+            </div>
+            <div class="workflowContent">
+              <h3 id="workflow-step-1-title" class="featureTitle">Drop in your images</h3>
+              <p class="featureText">
+                Works with any format. JPG, PNG, WebP, GIF, BMP, TIFF, or AVIF. No converting or reformatting before
+                you start.
+              </p>
+            </div>
+          </article>
+
+          <article class="workflowItem" aria-labelledby="workflow-step-2-title">
+            <div class="workflowMarker" aria-hidden="true">
+              <span class="workflowDot">02</span>
+            </div>
+            <div class="workflowContent">
+              <h3 id="workflow-step-2-title" class="featureTitle">AI reads and renames</h3>
+              <p class="featureText">
+                TLDR analyzes what is actually in each image and generates descriptive, SEO-friendly filenames. No
+                manual naming required.
+              </p>
+            </div>
+          </article>
+
+          <article class="workflowItem" aria-labelledby="workflow-step-3-title">
+            <div class="workflowMarker" aria-hidden="true">
+              <span class="workflowDot">03</span>
+            </div>
+            <div class="workflowContent">
+              <h3 id="workflow-step-3-title" class="featureTitle">Compress and tag</h3>
+              <p class="featureText">
+                Images are compressed for the web and paired with generated metadata. Alt text, titles, captions, and
+                descriptions ready to use.
+              </p>
+            </div>
+          </article>
+
+          <article class="workflowItem" aria-labelledby="workflow-step-4-title">
+            <div class="workflowMarker" aria-hidden="true">
+              <span class="workflowDot">04</span>
+            </div>
+            <div class="workflowContent">
+              <h3 id="workflow-step-4-title" class="featureTitle">Review, approve, and export</h3>
+              <p class="featureText">
+                Check the output before anything leaves. Your originals stay untouched. Export only what you are happy
+                with.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="marketingSection automationCtaSection"
+        id="automation-trial-cta"
+        aria-labelledby="automation-cta-title"
+        aria-describedby="automation-cta-description"
+      >
+        <div class="automationCtaPanel">
+          <header class="sectionHeader automationCtaCopy">
+            <span class="fieldLabel">Get Started</span>
+            <h2 id="automation-cta-title" class="sectionTitle automationCtaTitle">Automate the boring stuff.</h2>
+            <p id="automation-cta-description" class="automationCtaText">
+              Process your first 50 images free. No card required, no commitment.
+            </p>
+          </header>
+          <div class="automationCtaActions">
+            <a
+              class="primaryAction"
+              href="#one-last-thing"
+              aria-label="Scroll to the One Last Thing section"
+            >
+              <span class="iconGlyph" aria-hidden="true">✦</span>
+              <span>Download Now</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="marketingSection"
+        id="image-workflow-faq"
+        aria-labelledby="faq-title"
+        aria-describedby="faq-description"
+      >
+        <header class="sectionHeader sectionHeaderCentered">
+          <span class="fieldLabel">Frequently Asked Questions</span>
+          <h2 id="faq-title" class="sectionTitle">Everything you should ask before you get started</h2>
+          <p id="faq-description" class="sectionText">
+            See how TLDR helps ecommerce, content, and marketing teams prepare images faster.
+          </p>
+        </header>
+
+        <div class="faqList">
+          <details class="faqItem" open itemscope itemtype="https://schema.org/Question">
+            <summary class="faqItemSummary">
+              <span class="faqItemTitle" itemprop="name">What is TLDR and what does it do?</span>
+              <span class="faqItemIcon" aria-hidden="true">+</span>
+            </summary>
+            <div class="faqItemBody">
+              <p class="faqItemAnswer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <span itemprop="text">
+                  TLDR is an image workflow app that renames files, optimizes image size and format, and generates
+                  metadata including titles, alt text, captions, and descriptions in one workflow. It turns raw image
+                  folders into web-ready assets with far less manual work.
+                </span>
+              </p>
+            </div>
+          </details>
+
+          <details class="faqItem" open itemscope itemtype="https://schema.org/Question">
+            <summary class="faqItemSummary">
+              <span class="faqItemTitle" itemprop="name">How does TLDR handle bulk image processing?</span>
+              <span class="faqItemIcon" aria-hidden="true">+</span>
+            </summary>
+            <div class="faqItemBody">
+              <p class="faqItemAnswer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <span itemprop="text">
+                  TLDR is built for batch processing at scale. Teams can upload large image sets, preview changes,
+                  apply bulk renaming and optimization, and export everything in one run, saving hours of manual work
+                  per project.
+                </span>
+              </p>
+            </div>
+          </details>
+
+          <details class="faqItem" open itemscope itemtype="https://schema.org/Question">
+            <summary class="faqItemSummary">
+              <span class="faqItemTitle" itemprop="name">Who is TLDR designed for?</span>
+              <span class="faqItemIcon" aria-hidden="true">+</span>
+            </summary>
+            <div class="faqItemBody">
+              <p class="faqItemAnswer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <span itemprop="text">
+                  TLDR is designed for ecommerce teams, marketers, content managers, and web teams that need
+                  optimized, properly labeled images without manual cleanup. It is a strong fit for product listings,
+                  blog content, landing pages, and campaign assets.
+                </span>
+              </p>
+            </div>
+          </details>
+
+          <details class="faqItem" open itemscope itemtype="https://schema.org/Question">
+            <summary class="faqItemSummary">
+              <span class="faqItemTitle" itemprop="name">Does TLDR generate alt text automatically?</span>
+              <span class="faqItemIcon" aria-hidden="true">+</span>
+            </summary>
+            <div class="faqItemBody">
+              <p class="faqItemAnswer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <span itemprop="text">
+                  Yes. TLDR generates descriptive alt text, captions, and other image metadata automatically. That
+                  helps teams improve accessibility and publish more consistent image content faster.
+                </span>
+              </p>
+            </div>
+          </details>
+
+          <details class="faqItem" open itemscope itemtype="https://schema.org/Question">
+            <summary class="faqItemSummary">
+              <span class="faqItemTitle" itemprop="name">Can TLDR help with image SEO workflows?</span>
+              <span class="faqItemIcon" aria-hidden="true">+</span>
+            </summary>
+            <div class="faqItemBody">
+              <p class="faqItemAnswer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <span itemprop="text">
+                  TLDR supports image SEO workflows by generating descriptive filenames, lighter exports, and
+                  structured metadata that teams can review before publishing. It reduces repetitive prep work, but
+                  teams still control what gets shipped.
+                </span>
+              </p>
+            </div>
+          </details>
+
+          <details class="faqItem" open itemscope itemtype="https://schema.org/Question">
+            <summary class="faqItemSummary">
+              <span class="faqItemTitle" itemprop="name">Does TLDR keep original image files unchanged?</span>
+              <span class="faqItemIcon" aria-hidden="true">+</span>
+            </summary>
+            <div class="faqItemBody">
+              <p class="faqItemAnswer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <span itemprop="text">
+                  Yes. TLDR exports processed copies and leaves the original source files untouched, which makes it
+                  safer to use in production content workflows.
+                </span>
+              </p>
+            </div>
+          </details>
+
+          <details class="faqItem" open itemscope itemtype="https://schema.org/Question">
+            <summary class="faqItemSummary">
+              <span class="faqItemTitle" itemprop="name">What image formats does TLDR support?</span>
+              <span class="faqItemIcon" aria-hidden="true">+</span>
+            </summary>
+            <div class="faqItemBody">
+              <p class="faqItemAnswer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <span itemprop="text">
+                  TLDR supports JPG, JPEG, PNG, WebP, GIF, BMP, TIFF, and AVIF image files.
+                </span>
+              </p>
+            </div>
+          </details>
+
+          <details class="faqItem" open itemscope itemtype="https://schema.org/Question">
+            <summary class="faqItemSummary">
+              <span class="faqItemTitle" itemprop="name">How is TLDR different from doing this manually or using Photoshop?</span>
+              <span class="faqItemIcon" aria-hidden="true">+</span>
+            </summary>
+            <div class="faqItemBody">
+              <p class="faqItemAnswer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <span itemprop="text">
+                  Manual renaming, optimization, and metadata entry are slow, inconsistent, and hard to scale. TLDR
+                  handles file naming, compression, format conversion, and metadata generation in one place, so teams
+                  move faster with fewer errors.
+                </span>
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section
+        class="marketingSection closingBanner"
+        id="one-last-thing"
+        aria-labelledby="closing-banner-title"
+        aria-describedby="closing-banner-description"
+      >
+        <div class="closingBannerPanel">
+          <span class="fieldLabel">One Last Thing</span>
+          <h2 id="closing-banner-title" class="sectionTitle closingBannerTitle">
+            If you're doing it once, you're doing it too many times.
+          </h2>
+          <p id="closing-banner-description" class="closingBannerText">
+            Renaming. Optimizing. Writing. Resizing. Converting. Nobody puts that on their vision board. TLDR does it
+            for you. Run it once, get it done.
+          </p>
+          <div class="closingBannerActions">
+            <a
+              class="primaryAction"
+              href="mailto:hello@tldr.is?subject=TLDR%20Download%20Now"
+              aria-label="Email TLDR to get the download"
+            >
+              <span class="iconGlyph" aria-hidden="true">✦</span>
+              <span>Download Now</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="marketingFooter" aria-labelledby="footer-title">
+      <div class="footerShell">
+        <div class="siteFooterRow siteFooterBody">
+          <div class="siteFooterTopRow">
+            <p id="footer-title" class="brand marketingBrand">TLDR</p>
+            <div class="siteFooterMetaRow">
+              <div class="footerLinks">
+                <address class="footerContact">
+                  <a href="mailto:hello@tldr.is" rel="nofollow">Contact Us</a>
+                </address>
+                <a class="footerLink" href="/changelog/" data-nav-item="changelog">Changelog</a>
+              </div>
+              <span class="siteFooterMetaSeparator" aria-hidden="true">•</span>
+              <p class="footerCopyright">© <span data-current-year>2026</span></p>
+            </div>
+          </div>
+          <p class="footerMeta">Automated image file renaming, optimization, and generated metadata.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

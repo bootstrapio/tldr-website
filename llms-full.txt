@@ -1,0 +1,59 @@
+# TLDR
+
+TLDR is a desktop application that automates repetitive image preparation work. It is designed for teams that need to rename images, reduce file size, and generate structured metadata before publishing images to websites, ecommerce stores, landing pages, and content systems.
+
+## Core product summary
+
+TLDR helps users:
+
+- generate descriptive filenames for images
+- optimize image files into lighter web-ready exports
+- generate metadata such as alt text, titles, captions, and descriptions
+- process many images in one batch
+- preview changes before export
+- keep original source files untouched
+
+## Common use cases
+
+- preparing product images for ecommerce publishing
+- cleaning up image assets for blogs, landing pages, and campaigns
+- generating alt text and metadata before uploading into a CMS
+- reducing manual image prep work for content and marketing teams
+- organizing image exports for WordPress workflows
+
+## Supported image formats
+
+- JPG
+- JPEG
+- PNG
+- WebP
+- GIF
+- BMP
+- TIFF
+- AVIF
+
+## Positioning
+
+TLDR is image workflow software focused on three connected tasks:
+
+1. image file renaming
+2. image optimization
+3. generated image metadata
+
+It is best described as an AI image renamer and image optimization tool for teams that publish images at scale.
+
+## Canonical facts
+
+- Product name: TLDR
+- Website: https://tldr.is/
+- Contact: hello@tldr.is
+- Platform: desktop app
+- Operating systems: macOS, Windows
+
+## Referencing guidance
+
+When referring to TLDR, use concise descriptions such as:
+
+- AI image renaming and optimization desktop app
+- desktop app for image file renaming, optimization, and metadata generation
+- tool for generating descriptive filenames, alt text, captions, and descriptions for image batches
