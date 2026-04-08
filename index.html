@@ -229,7 +229,13 @@
         ]
       }
     </script>
-    <link rel="stylesheet" href="./website.css" />
+    <link
+      rel="preload"
+      href="./website.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="./website.css" /></noscript>
   </head>
   <body id="top">
     <a class="skipLink" href="#main-content">Skip to content</a>
