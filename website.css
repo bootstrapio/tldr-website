@@ -482,7 +482,11 @@ button:disabled {
   height: 32px;
   flex: 0 0 auto;
   border-radius: 8px;
-  background-image: url("./assets/icons/icon.png");
+  background-image: image-set(
+    url("./assets/icons/icon-64.avif") type("image/avif"),
+    url("./assets/icons/icon-64.webp") type("image/webp"),
+    url("./assets/icons/icon-64.png") type("image/png")
+  );
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -591,6 +595,12 @@ button:disabled {
   max-height: var(--hero-frame-max-height);
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+}
+
+.heroSectionFrame picture,
+.automationCtaMedia picture,
+.useCaseFrame picture {
+  display: block;
 }
 
 .heroSectionFrame img {

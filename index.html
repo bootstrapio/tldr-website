@@ -16,7 +16,15 @@
     <meta name="theme-color" content="#f8f9ff" />
     <link rel="canonical" href="https://tldr.is/" />
     <link rel="alternate" type="text/markdown" href="https://tldr.is/llms.txt" title="LLMs.txt for TLDR" />
-    <link rel="icon" href="./assets/icons/icon.png" />
+    <link rel="icon" type="image/avif" href="./assets/icons/icon-64.avif" sizes="64x64" />
+    <link rel="icon" type="image/png" href="./assets/icons/icon-64.png" sizes="64x64" />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/laptop-screen-with-preview-modal.avif"
+      type="image/avif"
+      fetchpriority="high"
+    />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="TLDR" />
     <meta property="og:title" content="TLDR | AI Image Renaming, Optimization, and Metadata" />
@@ -78,7 +86,7 @@
             "email": "hello@tldr.is",
             "logo": {
               "@type": "ImageObject",
-              "url": "https://tldr.is/assets/icons/icon.png"
+              "url": "https://tldr.is/assets/icons/icon-64.png"
             },
             "contactPoint": {
               "@type": "ContactPoint",
@@ -221,7 +229,13 @@
         ]
       }
     </script>
-    <link rel="stylesheet" href="./website.css" />
+    <link
+      rel="preload"
+      href="./website.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="./website.css" /></noscript>
     <script src="./website.js" defer></script>
   </head>
   <body id="top" data-site-nav="home">
@@ -229,12 +243,7 @@
     <header>
       <nav class="marketingNav" aria-label="Primary site navigation">
         <div class="marketingNavInner">
-          <a
-            class="marketingBrandRow"
-            href="#top"
-            aria-label="TLDR home"
-            aria-current="page"
-          >
+          <a class="marketingBrandRow" href="#top" aria-label="TLDR home" aria-current="page">
             <span class="marketingIcon" aria-hidden="true"></span>
             <span class="brand marketingBrand">TLDR</span>
           </a>
@@ -246,7 +255,7 @@
               aria-label="Scroll to the One Last Thing section"
             >
               <span class="iconGlyph" aria-hidden="true">✦</span>
-              <span>Download Now</span>
+              <span>Get Started</span>
             </a>
           </div>
         </div>
@@ -286,14 +295,21 @@
 
           <figure class="heroSectionMedia">
             <div class="heroSectionFrame">
-              <img
-                src="./assets/images/laptop-screen-with-preview-modal.webp"
-                alt="TLDR shown on a laptop with the metadata preview modal open over queued image assets"
-                width="1276"
-                height="768"
-                loading="eager"
-                decoding="async"
-              />
+              <picture>
+                <source
+                  srcset="./assets/images/laptop-screen-with-preview-modal.avif"
+                  type="image/avif"
+                />
+                <img
+                  src="./assets/images/laptop-screen-with-preview-modal.webp"
+                  alt="TLDR shown on a laptop with the metadata preview modal open over queued image assets"
+                  width="1276"
+                  height="768"
+                  loading="eager"
+                  decoding="async"
+                  fetchpriority="high"
+                />
+              </picture>
             </div>
             <figcaption hidden>TLDR desktop app preview showing AI-generated image metadata for a sample interior photo.</figcaption>
           </figure>
@@ -409,14 +425,20 @@
         <div class="useCaseLayout">
           <figure class="useCaseMedia">
             <div class="useCaseFrame">
-              <img
-                src="./assets/images/laptop-screen-with-asset-management-interface.webp"
-                alt="TLDR dashboard displayed on a laptop while image processing and optimization tasks are queued"
-                width="1276"
-                height="768"
-                loading="lazy"
-                decoding="async"
-              />
+              <picture>
+                <source
+                  srcset="./assets/images/laptop-screen-with-asset-management-interface.avif"
+                  type="image/avif"
+                />
+                <img
+                  src="./assets/images/laptop-screen-with-asset-management-interface.webp"
+                  alt="TLDR dashboard displayed on a laptop while image processing and optimization tasks are queued"
+                  width="1276"
+                  height="768"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
             </div>
           </figure>
 
@@ -467,14 +489,17 @@
         </header>
 
         <figure class="automationCtaMedia">
-          <img
-            src="./assets/images/laptop-screen-asset-list.webp"
-            alt="TLDR shown on a laptop with 13 optimized image assets and generated filename, title, alt text, caption, and description columns"
-            width="1192"
-            height="768"
-            loading="lazy"
-            decoding="async"
-          />
+          <picture>
+            <source srcset="./assets/images/laptop-screen-asset-list.avif" type="image/avif" />
+            <img
+              src="./assets/images/laptop-screen-asset-list.webp"
+              alt="TLDR shown on a laptop with 13 optimized image assets and generated filename, title, alt text, caption, and description columns"
+              width="1192"
+              height="768"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
         </figure>
 
         <div class="workflowTimeline" aria-label="TLDR workflow steps">
