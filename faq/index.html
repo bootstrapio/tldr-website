@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TLDR FAQ | Image Renaming, Optimization, and Metadata Questions</title>
+    <title>TLDR FAQ | Image Optimization, Metadata, WebP Exports, and Publishing Workflows</title>
     <meta
       name="description"
-      content="Read the TLDR FAQ covering bulk image processing, generated alt text, supported image formats, source file safety, and image SEO workflows."
+      content="Read the TLDR FAQ covering image optimization, metadata generation, WebP exports, WordPress workflows, batch processing, and supported image formats."
     />
     <meta name="author" content="TLDR" />
     <meta name="application-name" content="TLDR" />
@@ -21,10 +21,10 @@
     <link rel="icon" type="image/png" href="/assets/icons/icon-64.png" sizes="64x64" />
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="TLDR" />
-    <meta property="og:title" content="TLDR FAQ | Image Renaming, Optimization, and Metadata Questions" />
+    <meta property="og:title" content="TLDR FAQ | Image Optimization, Metadata, WebP Exports, and Publishing Workflows" />
     <meta
       property="og:description"
-      content="Answers to common TLDR questions about image workflows, metadata generation, export behavior, and supported formats."
+      content="Answers to common TLDR questions about image optimization, metadata, exports, supported formats, and publishing workflows."
     />
     <meta property="og:url" content="https://tldr.is/faq/" />
     <meta property="og:locale" content="en_US" />
@@ -35,10 +35,10 @@
       content="TLDR shown on a laptop with the metadata preview modal open over queued image assets"
     />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="TLDR FAQ | Image Renaming, Optimization, and Metadata Questions" />
+    <meta name="twitter:title" content="TLDR FAQ | Image Optimization, Metadata, WebP Exports, and Publishing Workflows" />
     <meta
       name="twitter:description"
-      content="Answers to common TLDR questions about image workflows, metadata generation, export behavior, and supported formats."
+      content="Answers to common TLDR questions about image optimization, metadata, exports, supported formats, and publishing workflows."
     />
     <meta name="twitter:image" content="https://tldr.is/assets/images/laptop-screen-with-preview-modal.webp" />
     <meta
@@ -76,7 +76,7 @@
             "@id": "https://tldr.is/faq/#webpage",
             "url": "https://tldr.is/faq/",
             "name": "TLDR FAQ",
-            "description": "Answers to common TLDR questions about image workflows, metadata generation, export behavior, and supported formats.",
+            "description": "Answers to common TLDR questions about image optimization, metadata, exports, supported formats, and publishing workflows.",
             "isPartOf": {
               "@id": "https://tldr.is/#website"
             },
@@ -108,69 +108,157 @@
           {
             "@type": "FAQPage",
             "@id": "https://tldr.is/faq/#faq",
+            "url": "https://tldr.is/faq/",
+            "name": "TLDR FAQ",
+            "isPartOf": {
+              "@id": "https://tldr.is/#website"
+            },
+            "about": {
+              "@id": "https://tldr.is/#software"
+            },
             "mainEntity": [
               {
                 "@type": "Question",
-                "name": "What is TLDR and what does it do?",
+                "@id": "https://tldr.is/faq/#faq-how-does-tldr-help-with-image-publishing",
+                "name": "How does TLDR help with image publishing?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "TLDR is an image workflow app that renames files, optimizes image size and format, and generates metadata including titles, alt text, captions, and descriptions in one workflow. It turns raw image folders into web-ready assets with far less manual work."
+                  "text": "TLDR generates descriptive filenames, compresses oversized files, and creates supporting metadata including alt text, titles, captions, and descriptions. The result is cleaner image assets that load faster and carry stronger context wherever they're published."
                 }
               },
               {
                 "@type": "Question",
-                "name": "How does TLDR handle bulk image processing?",
+                "@id": "https://tldr.is/faq/#faq-can-tldr-handle-large-image-libraries",
+                "name": "Can TLDR handle large image libraries?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "TLDR is built for batch processing at scale. Teams can upload large image sets, preview changes, apply bulk renaming and optimization, and export everything in one run, saving hours of manual work per project."
+                  "text": "Yes. TLDR is built for bulk processing. Teams can rename, optimize, and generate metadata for large batches of images in a single workflow — keeping everything consistent across product catalogs, blog libraries, landing pages, and resource centers."
                 }
               },
               {
                 "@type": "Question",
-                "name": "Who is TLDR designed for?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "TLDR is designed for ecommerce teams, marketers, content managers, and web teams that need optimized, properly labeled images without manual cleanup. It is a strong fit for product listings, blog content, landing pages, and campaign assets."
-                }
-              },
-              {
-                "@type": "Question",
+                "@id": "https://tldr.is/faq/#faq-does-tldr-generate-alt-text-automatically",
                 "name": "Does TLDR generate alt text automatically?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes. TLDR generates descriptive alt text, captions, and other image metadata automatically. That helps teams improve accessibility and publish more consistent image content faster."
+                  "text": "Yes. TLDR generates alt text automatically, along with titles, captions, and descriptions. Teams can review and edit everything before export, making it easier to scale accessibility work without publishing generic or inconsistent copy."
                 }
               },
               {
                 "@type": "Question",
-                "name": "Can TLDR help with image SEO workflows?",
+                "@id": "https://tldr.is/faq/#faq-why-do-image-filenames-matter-and-how-does-tldr-handle-them",
+                "name": "Why do image filenames matter, and how does TLDR handle them?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "TLDR supports image SEO workflows by generating descriptive filenames, lighter exports, and structured metadata that teams can review before publishing. It reduces repetitive prep work, but teams still control what gets shipped."
+                  "text": "Descriptive, readable filenames help give images clearer context across the web. TLDR replaces vague names like IMG_4821.jpg with meaningful filenames based on the actual image content — so nothing gets published with a name that says nothing."
                 }
               },
               {
                 "@type": "Question",
-                "name": "Does TLDR keep original image files unchanged?",
+                "@id": "https://tldr.is/faq/#faq-does-tldr-compress-images-too",
+                "name": "Does TLDR compress images too?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes. TLDR exports processed copies and leaves the original source files untouched, which makes it safer to use in production content workflows."
+                  "text": "Yes. Smaller image files improve page speed and overall user experience. TLDR compresses and optimizes exports so teams don't need a separate tool before publishing."
                 }
               },
               {
                 "@type": "Question",
+                "@id": "https://tldr.is/faq/#faq-what-types-of-images-can-tldr-process",
+                "name": "What types of images can TLDR process?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "TLDR works for product images, blog illustrations, landing page visuals, editorial assets, and other content workflows where metadata and optimized files need to be produced repeatedly and at scale. For a broader product overview, see TLDR features."
+                }
+              },
+              {
+                "@type": "Question",
+                "@id": "https://tldr.is/faq/#faq-can-i-review-and-edit-metadata-before-exporting",
+                "name": "Can I review and edit metadata before exporting?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Filenames, titles, alt text, captions, and descriptions can all be edited before export — useful when you need tighter control over specific wording or accessibility copy."
+                }
+              },
+              {
+                "@type": "Question",
+                "@id": "https://tldr.is/faq/#faq-can-tldr-regenerate-metadata-for-a-single-image",
+                "name": "Can TLDR regenerate metadata for a single image?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. You can retry AI-generated metadata for individual images without rerunning an entire batch — helpful when one image needs a sharper title, alt text, or description."
+                }
+              },
+              {
+                "@type": "Question",
+                "@id": "https://tldr.is/faq/#faq-does-tldr-export-webp-files",
+                "name": "Does TLDR export WebP files?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. TLDR exports optimized WebP copies using the generated filename, while leaving the original source file untouched."
+                }
+              },
+              {
+                "@type": "Question",
+                "@id": "https://tldr.is/faq/#faq-what-resize-and-compression-settings-does-tldr-use",
+                "name": "What resize and compression settings does TLDR use?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "TLDR resizes images to a maximum of 2560 pixels and targets an export size at or under 1 MB using a stepped WebP optimization process — lighter files, without manual configuration."
+                }
+              },
+              {
+                "@type": "Question",
+                "@id": "https://tldr.is/faq/#faq-what-happens-if-a-filename-can-t-be-generated",
+                "name": "What happens if a filename can't be generated?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "If automatic naming fails for one image, TLDR falls back to the original filename and keeps the rest of the batch moving. No single failure holds up the whole job."
+                }
+              },
+              {
+                "@type": "Question",
+                "@id": "https://tldr.is/faq/#faq-can-i-download-everything-as-one-file",
+                "name": "Can I download everything as one file?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. TLDR packages all processed images into a single ZIP archive, making it easy to download and hand off a completed batch."
+                }
+              },
+              {
+                "@type": "Question",
+                "@id": "https://tldr.is/faq/#faq-does-tldr-work-with-wordpress",
+                "name": "Does TLDR work with WordPress?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. TLDR supports WordPress-connected workflows — you can sign in from the app and send processed images directly to your WordPress backend. If you want more workflow context, see the TLDR use cases page."
+                }
+              },
+              {
+                "@type": "Question",
+                "@id": "https://tldr.is/faq/#faq-are-my-original-files-kept-safe",
+                "name": "Are my original files kept safe?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. TLDR always exports processed copies and never modifies the original source files."
+                }
+              },
+              {
+                "@type": "Question",
+                "@id": "https://tldr.is/faq/#faq-what-image-formats-does-tldr-support",
                 "name": "What image formats does TLDR support?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "TLDR supports JPG, JPEG, PNG, WebP, GIF, BMP, TIFF, and AVIF image files."
+                  "text": "TLDR supports JPG, JPEG, PNG, WebP, GIF, BMP, TIFF, and AVIF."
                 }
               },
               {
                 "@type": "Question",
-                "name": "How is TLDR different from doing this manually or using Photoshop?",
+                "@id": "https://tldr.is/faq/#faq-how-is-tldr-different-from-doing-this-manually",
+                "name": "How is TLDR different from doing this manually?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Manual renaming, optimization, and metadata entry are slow, inconsistent, and hard to scale. TLDR handles file naming, compression, format conversion, and metadata generation in one place, so teams move faster with fewer errors."
+                  "text": "Manual image workflows usually mean renaming files one by one, compressing in a separate tool, and writing metadata in another. TLDR combines all of that into one step — so teams produce consistent, publish-ready image assets faster. You can compare that workflow against the feature set and the use cases."
                 }
               }
             ]
@@ -204,70 +292,164 @@
             <span class="marketingIcon" aria-hidden="true"></span>
             <span class="brand marketingBrand">TLDR</span>
           </a>
-          <p class="marketingNavMeta">Automated image file renaming, optimization, and generated metadata.</p>
-          <div class="marketingNavActions">
-            <a class="primaryAction" href="/contact/">
-              <span class="iconGlyph" aria-hidden="true">✦</span>
-              <span>Get Started</span>
-            </a>
+          <div class="marketingNavRight">
+            <div class="marketingNavLinks" aria-label="Primary site links">
+            <a class="marketingNavLink" href="/features/">Features</a>
+            <a class="marketingNavLink" href="/use-cases/">Use Cases</a>
+            <a class="marketingNavLink" href="/faq/" aria-current="page">FAQ</a>
+            </div>
+            <div class="marketingNavActions">
+              <a class="primaryAction" href="/contact/">
+                <span class="iconGlyph" aria-hidden="true">✦</span>
+                <span>Get Started</span>
+              </a>
+            </div>
           </div>
         </div>
       </nav>
     </header>
-    <main id="main-content" class="marketingShell contentPage">
-      <section class="contentHero" aria-labelledby="faq-title">
-        <span class="fieldLabel">TLDR FAQ</span>
-        <h1 id="faq-title" class="sectionTitle">Answers to the questions people ask before they adopt the workflow.</h1>
-        <p>
-          This page gives Google and prospective users a stable indexable resource for the main product questions:
-          what TLDR does, who it helps, which image formats it supports, and how the export workflow behaves.
-        </p>
+    <main id="main-content" class="marketingShell">
+      <section class="marketingSection faqPageHero" aria-labelledby="faq-title" aria-describedby="faq-description">
+        <header class="sectionHeader sectionHeaderCentered">
+          <span class="fieldLabel">TLDR FAQ</span>
+          <h1 id="faq-title" class="sectionTitle">How TLDR is used for image optimization and publishing workflows.</h1>
+          <p id="faq-description" class="sectionText">
+            Common questions about image optimization workflows, image metadata workflows, bulk image processing, WebP
+            exports, and publishing workflows for teams working at scale.
+          </p>
+        </header>
       </section>
     
-      <section class="contentSection" aria-labelledby="faq-list-title">
-        <span class="fieldLabel">Frequently Asked Questions</span>
-        <h2 id="faq-list-title">Common TLDR questions</h2>
-            <div class="faqList">
-          <details class="faqItem" open>
-            <summary class="faqItemSummary"><span class="faqItemTitle">What is TLDR and what does it do?</span></summary>
-            <div class="faqItemBody"><p class="faqItemAnswer">TLDR is an image workflow app that renames files, optimizes image size and format, and generates metadata including titles, alt text, captions, and descriptions in one workflow. It turns raw image folders into web-ready assets with far less manual work.</p></div>
-          </details>
-          <details class="faqItem" open>
-            <summary class="faqItemSummary"><span class="faqItemTitle">How does TLDR handle bulk image processing?</span></summary>
-            <div class="faqItemBody"><p class="faqItemAnswer">TLDR is built for batch processing at scale. Teams can upload large image sets, preview changes, apply bulk renaming and optimization, and export everything in one run, saving hours of manual work per project.</p></div>
-          </details>
-          <details class="faqItem" open>
-            <summary class="faqItemSummary"><span class="faqItemTitle">Who is TLDR designed for?</span></summary>
-            <div class="faqItemBody"><p class="faqItemAnswer">TLDR is designed for ecommerce teams, marketers, content managers, and web teams that need optimized, properly labeled images without manual cleanup. It is a strong fit for product listings, blog content, landing pages, and campaign assets.</p></div>
-          </details>
-          <details class="faqItem" open>
-            <summary class="faqItemSummary"><span class="faqItemTitle">Does TLDR generate alt text automatically?</span></summary>
-            <div class="faqItemBody"><p class="faqItemAnswer">Yes. TLDR generates descriptive alt text, captions, and other image metadata automatically. That helps teams improve accessibility and publish more consistent image content faster.</p></div>
-          </details>
-          <details class="faqItem" open>
-            <summary class="faqItemSummary"><span class="faqItemTitle">Can TLDR help with image SEO workflows?</span></summary>
-            <div class="faqItemBody"><p class="faqItemAnswer">TLDR supports image SEO workflows by generating descriptive filenames, lighter exports, and structured metadata that teams can review before publishing. It reduces repetitive prep work, but teams still control what gets shipped.</p></div>
-          </details>
-          <details class="faqItem" open>
-            <summary class="faqItemSummary"><span class="faqItemTitle">Does TLDR keep original image files unchanged?</span></summary>
-            <div class="faqItemBody"><p class="faqItemAnswer">Yes. TLDR exports processed copies and leaves the original source files untouched, which makes it safer to use in production content workflows.</p></div>
-          </details>
-          <details class="faqItem" open>
-            <summary class="faqItemSummary"><span class="faqItemTitle">What image formats does TLDR support?</span></summary>
-            <div class="faqItemBody"><p class="faqItemAnswer">TLDR supports JPG, JPEG, PNG, WebP, GIF, BMP, TIFF, and AVIF image files.</p></div>
-          </details>
-          <details class="faqItem" open>
-            <summary class="faqItemSummary"><span class="faqItemTitle">How is TLDR different from doing this manually or using Photoshop?</span></summary>
-            <div class="faqItemBody"><p class="faqItemAnswer">Manual renaming, optimization, and metadata entry are slow, inconsistent, and hard to scale. TLDR handles file naming, compression, format conversion, and metadata generation in one place, so teams move faster with fewer errors.</p></div>
-          </details>
+      <section class="marketingSection faqPageSection" aria-labelledby="faq-questions-title">
+        <header class="srOnly">
+          <h2 id="faq-questions-title">Frequently asked questions</h2>
+        </header>
+            <div class="faqPageList">
+          <article class="faqPageItem" id="faq-how-does-tldr-help-with-image-publishing">
+            <h2 class="faqPageQuestion">
+              <a class="faqPageQuestionLink" href="#faq-how-does-tldr-help-with-image-publishing">How does TLDR help with image publishing?</a>
+            </h2>
+            <p class="faqPageAnswer">TLDR generates descriptive filenames, compresses oversized files, and creates supporting metadata including alt text, titles, captions, and descriptions. The result is cleaner image assets that load faster and carry stronger context wherever they're published.</p>
+          </article>
+          <article class="faqPageItem" id="faq-can-tldr-handle-large-image-libraries">
+            <h2 class="faqPageQuestion">
+              <a class="faqPageQuestionLink" href="#faq-can-tldr-handle-large-image-libraries">Can TLDR handle large image libraries?</a>
+            </h2>
+            <p class="faqPageAnswer">Yes. TLDR is built for bulk processing. Teams can rename, optimize, and generate metadata for large batches of images in a single workflow — keeping everything consistent across product catalogs, blog libraries, landing pages, and resource centers.</p>
+          </article>
+          <article class="faqPageItem" id="faq-does-tldr-generate-alt-text-automatically">
+            <h2 class="faqPageQuestion">
+              <a class="faqPageQuestionLink" href="#faq-does-tldr-generate-alt-text-automatically">Does TLDR generate alt text automatically?</a>
+            </h2>
+            <p class="faqPageAnswer">Yes. TLDR generates alt text automatically, along with titles, captions, and descriptions. Teams can review and edit everything before export, making it easier to scale accessibility work without publishing generic or inconsistent copy.</p>
+          </article>
+          <article class="faqPageItem" id="faq-why-do-image-filenames-matter-and-how-does-tldr-handle-them">
+            <h2 class="faqPageQuestion">
+              <a class="faqPageQuestionLink" href="#faq-why-do-image-filenames-matter-and-how-does-tldr-handle-them">Why do image filenames matter, and how does TLDR handle them?</a>
+            </h2>
+            <p class="faqPageAnswer">Descriptive, readable filenames help give images clearer context across the web. TLDR replaces vague names like IMG_4821.jpg with meaningful filenames based on the actual image content — so nothing gets published with a name that says nothing.</p>
+          </article>
+          <article class="faqPageItem" id="faq-does-tldr-compress-images-too">
+            <h2 class="faqPageQuestion">
+              <a class="faqPageQuestionLink" href="#faq-does-tldr-compress-images-too">Does TLDR compress images too?</a>
+            </h2>
+            <p class="faqPageAnswer">Yes. Smaller image files improve page speed and overall user experience. TLDR compresses and optimizes exports so teams don't need a separate tool before publishing.</p>
+          </article>
+          <article class="faqPageItem" id="faq-what-types-of-images-can-tldr-process">
+            <h2 class="faqPageQuestion">
+              <a class="faqPageQuestionLink" href="#faq-what-types-of-images-can-tldr-process">What types of images can TLDR process?</a>
+            </h2>
+            <p class="faqPageAnswer">TLDR works for product images, blog illustrations, landing page visuals, editorial assets, and other content workflows where metadata and optimized files need to be produced repeatedly and at scale. For a broader product overview, see <a href="/features/">TLDR features</a>.</p>
+          </article>
+          <article class="faqPageItem" id="faq-can-i-review-and-edit-metadata-before-exporting">
+            <h2 class="faqPageQuestion">
+              <a class="faqPageQuestionLink" href="#faq-can-i-review-and-edit-metadata-before-exporting">Can I review and edit metadata before exporting?</a>
+            </h2>
+            <p class="faqPageAnswer">Yes. Filenames, titles, alt text, captions, and descriptions can all be edited before export — useful when you need tighter control over specific wording or accessibility copy.</p>
+          </article>
+          <article class="faqPageItem" id="faq-can-tldr-regenerate-metadata-for-a-single-image">
+            <h2 class="faqPageQuestion">
+              <a class="faqPageQuestionLink" href="#faq-can-tldr-regenerate-metadata-for-a-single-image">Can TLDR regenerate metadata for a single image?</a>
+            </h2>
+            <p class="faqPageAnswer">Yes. You can retry AI-generated metadata for individual images without rerunning an entire batch — helpful when one image needs a sharper title, alt text, or description.</p>
+          </article>
+          <article class="faqPageItem" id="faq-does-tldr-export-webp-files">
+            <h2 class="faqPageQuestion">
+              <a class="faqPageQuestionLink" href="#faq-does-tldr-export-webp-files">Does TLDR export WebP files?</a>
+            </h2>
+            <p class="faqPageAnswer">Yes. TLDR exports optimized WebP copies using the generated filename, while leaving the original source file untouched.</p>
+          </article>
+          <article class="faqPageItem" id="faq-what-resize-and-compression-settings-does-tldr-use">
+            <h2 class="faqPageQuestion">
+              <a class="faqPageQuestionLink" href="#faq-what-resize-and-compression-settings-does-tldr-use">What resize and compression settings does TLDR use?</a>
+            </h2>
+            <p class="faqPageAnswer">TLDR resizes images to a maximum of 2560 pixels and targets an export size at or under 1 MB using a stepped WebP optimization process — lighter files, without manual configuration.</p>
+          </article>
+          <article class="faqPageItem" id="faq-what-happens-if-a-filename-can-t-be-generated">
+            <h2 class="faqPageQuestion">
+              <a class="faqPageQuestionLink" href="#faq-what-happens-if-a-filename-can-t-be-generated">What happens if a filename can't be generated?</a>
+            </h2>
+            <p class="faqPageAnswer">If automatic naming fails for one image, TLDR falls back to the original filename and keeps the rest of the batch moving. No single failure holds up the whole job.</p>
+          </article>
+          <article class="faqPageItem" id="faq-can-i-download-everything-as-one-file">
+            <h2 class="faqPageQuestion">
+              <a class="faqPageQuestionLink" href="#faq-can-i-download-everything-as-one-file">Can I download everything as one file?</a>
+            </h2>
+            <p class="faqPageAnswer">Yes. TLDR packages all processed images into a single ZIP archive, making it easy to download and hand off a completed batch.</p>
+          </article>
+          <article class="faqPageItem" id="faq-does-tldr-work-with-wordpress">
+            <h2 class="faqPageQuestion">
+              <a class="faqPageQuestionLink" href="#faq-does-tldr-work-with-wordpress">Does TLDR work with WordPress?</a>
+            </h2>
+            <p class="faqPageAnswer">Yes. TLDR supports WordPress-connected workflows — you can sign in from the app and send processed images directly to your WordPress backend. If you want more workflow context, see the <a href="/use-cases/">TLDR use cases</a> page.</p>
+          </article>
+          <article class="faqPageItem" id="faq-are-my-original-files-kept-safe">
+            <h2 class="faqPageQuestion">
+              <a class="faqPageQuestionLink" href="#faq-are-my-original-files-kept-safe">Are my original files kept safe?</a>
+            </h2>
+            <p class="faqPageAnswer">Yes. TLDR always exports processed copies and never modifies the original source files.</p>
+          </article>
+          <article class="faqPageItem" id="faq-what-image-formats-does-tldr-support">
+            <h2 class="faqPageQuestion">
+              <a class="faqPageQuestionLink" href="#faq-what-image-formats-does-tldr-support">What image formats does TLDR support?</a>
+            </h2>
+            <p class="faqPageAnswer">TLDR supports JPG, JPEG, PNG, WebP, GIF, BMP, TIFF, and AVIF.</p>
+          </article>
+          <article class="faqPageItem" id="faq-how-is-tldr-different-from-doing-this-manually">
+            <h2 class="faqPageQuestion">
+              <a class="faqPageQuestionLink" href="#faq-how-is-tldr-different-from-doing-this-manually">How is TLDR different from doing this manually?</a>
+            </h2>
+            <p class="faqPageAnswer">Manual image workflows usually mean renaming files one by one, compressing in a separate tool, and writing metadata in another. TLDR combines all of that into one step — so teams produce consistent, publish-ready image assets faster. You can compare that workflow against the <a href="/features/">feature set</a> and the <a href="/use-cases/">use cases</a>.</p>
+          </article>
         </div>
       </section>
     
-      <section class="contentCallout" aria-labelledby="faq-next-step-title">
-        <span class="fieldLabel">Next Step</span>
-        <h2 id="faq-next-step-title">Need implementation details?</h2>
-        <p>Browse feature coverage or reach out directly if you want the desktop app and workflow specifics.</p>
-        <p><a href="/features/">Review TLDR features</a> and <a href="/contact/">contact TLDR</a>.</p>
+        <section
+        class="marketingSection closingBanner"
+        id="one-last-thing"
+        aria-labelledby="closing-banner-title"
+        aria-describedby="closing-banner-description"
+      >
+        <div class="closingBannerPanel">
+          <span class="fieldLabel">One Last Thing</span>
+          <h2 id="closing-banner-title" class="sectionTitle closingBannerTitle">
+            If you're doing it once, you're doing it too many times.
+          </h2>
+          <p id="closing-banner-description" class="closingBannerText">
+            Renaming. Optimizing. Writing. Resizing. Converting. Nobody puts that on their vision board. TLDR does it
+            for you. Run it once, get it done.
+          </p>
+          <div class="closingBannerActions">
+            <a
+              class="primaryAction"
+              href="mailto:hello@tldr.is?subject=TLDR%20Download%20Now"
+              aria-label="Email TLDR to get the download"
+            >
+              <span class="iconGlyph" aria-hidden="true">✦</span>
+              <span>Download Now</span>
+            </a>
+          </div>
+        </div>
       </section>
     </main>
     
@@ -281,7 +463,6 @@
                 <a class="footerLink" href="/features/">Features</a>
                 <a class="footerLink" href="/use-cases/">Use Cases</a>
                 <a class="footerLink" href="/faq/" aria-current="page">FAQ</a>
-                <a class="footerLink" href="/contact/">Contact</a>
               </div>
               <span class="siteFooterMetaSeparator" aria-hidden="true">•</span>
               <p class="footerCopyright">© <span data-current-year>2026</span></p>
