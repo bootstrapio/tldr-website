@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TLDR FAQ | Image Renaming, Optimization, and Metadata Questions</title>
+    <meta
+      name="description"
+      content="Read the TLDR FAQ covering bulk image processing, generated alt text, supported image formats, source file safety, and image SEO workflows."
+    />
+    <meta name="author" content="TLDR" />
+    <meta name="application-name" content="TLDR" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="googlebot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <meta name="bingbot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <meta name="theme-color" content="#f8f9ff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="canonical" href="https://tldr.is/faq/" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/avif" href="/assets/icons/icon-64.avif" sizes="64x64" />
+    <link rel="icon" type="image/png" href="/assets/icons/icon-64.png" sizes="64x64" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="TLDR" />
+    <meta property="og:title" content="TLDR FAQ | Image Renaming, Optimization, and Metadata Questions" />
+    <meta
+      property="og:description"
+      content="Answers to common TLDR questions about image workflows, metadata generation, export behavior, and supported formats."
+    />
+    <meta property="og:url" content="https://tldr.is/faq/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image" content="https://tldr.is/assets/images/laptop-screen-with-preview-modal.webp" />
+    <meta
+      property="og:image:alt"
+      content="TLDR shown on a laptop with the metadata preview modal open over queued image assets"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="TLDR FAQ | Image Renaming, Optimization, and Metadata Questions" />
+    <meta
+      name="twitter:description"
+      content="Answers to common TLDR questions about image workflows, metadata generation, export behavior, and supported formats."
+    />
+    <meta name="twitter:image" content="https://tldr.is/assets/images/laptop-screen-with-preview-modal.webp" />
+    <meta
+      name="twitter:image:alt"
+      content="TLDR shown on a laptop with the metadata preview modal open over queued image assets"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://tldr.is/#website",
+            "name": "TLDR",
+            "url": "https://tldr.is/",
+            "description": "TLDR is a desktop app for AI image file renaming, optimization, and generated metadata.",
+            "inLanguage": "en-US",
+            "publisher": {
+              "@id": "https://tldr.is/#organization"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://tldr.is/#organization",
+            "name": "TLDR",
+            "url": "https://tldr.is/",
+            "email": "hello@tldr.is",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://tldr.is/assets/icons/icon-64.png"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://tldr.is/faq/#webpage",
+            "url": "https://tldr.is/faq/",
+            "name": "TLDR FAQ",
+            "description": "Answers to common TLDR questions about image workflows, metadata generation, export behavior, and supported formats.",
+            "isPartOf": {
+              "@id": "https://tldr.is/#website"
+            },
+            "about": {
+              "@id": "https://tldr.is/#software"
+            },
+            "breadcrumb": {
+              "@id": "https://tldr.is/faq/#breadcrumb"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://tldr.is/faq/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://tldr.is/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "FAQ",
+                "item": "https://tldr.is/faq/"
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://tldr.is/faq/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is TLDR and what does it do?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "TLDR is an image workflow app that renames files, optimizes image size and format, and generates metadata including titles, alt text, captions, and descriptions in one workflow. It turns raw image folders into web-ready assets with far less manual work."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does TLDR handle bulk image processing?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "TLDR is built for batch processing at scale. Teams can upload large image sets, preview changes, apply bulk renaming and optimization, and export everything in one run, saving hours of manual work per project."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Who is TLDR designed for?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "TLDR is designed for ecommerce teams, marketers, content managers, and web teams that need optimized, properly labeled images without manual cleanup. It is a strong fit for product listings, blog content, landing pages, and campaign assets."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does TLDR generate alt text automatically?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. TLDR generates descriptive alt text, captions, and other image metadata automatically. That helps teams improve accessibility and publish more consistent image content faster."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can TLDR help with image SEO workflows?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "TLDR supports image SEO workflows by generating descriptive filenames, lighter exports, and structured metadata that teams can review before publishing. It reduces repetitive prep work, but teams still control what gets shipped."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does TLDR keep original image files unchanged?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. TLDR exports processed copies and leaves the original source files untouched, which makes it safer to use in production content workflows."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What image formats does TLDR support?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "TLDR supports JPG, JPEG, PNG, WebP, GIF, BMP, TIFF, and AVIF image files."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How is TLDR different from doing this manually or using Photoshop?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Manual renaming, optimization, and metadata entry are slow, inconsistent, and hard to scale. TLDR handles file naming, compression, format conversion, and metadata generation in one place, so teams move faster with fewer errors."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+    <link
+      rel="preload"
+      href="/website.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="/website.css" /></noscript>
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-NB5PBRTC');
+    </script>
+    <script src="/site.js" defer></script>
+  </head>
+  <body id="top">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NB5PBRTC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <a class="skipLink" href="#main-content">Skip to content</a>
+    <header>
+      <nav class="marketingNav" aria-label="Primary site navigation">
+        <div class="marketingNavInner">
+          <a class="marketingBrandRow" href="/" aria-label="TLDR home">
+            <span class="marketingIcon" aria-hidden="true"></span>
+            <span class="brand marketingBrand">TLDR</span>
+          </a>
+          <p class="marketingNavMeta">Automated image file renaming, optimization, and generated metadata.</p>
+          <div class="marketingNavActions">
+            <a class="primaryAction" href="/contact/">
+              <span class="iconGlyph" aria-hidden="true">✦</span>
+              <span>Get Started</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="main-content" class="marketingShell contentPage">
+      <section class="contentHero" aria-labelledby="faq-title">
+        <span class="fieldLabel">TLDR FAQ</span>
+        <h1 id="faq-title" class="sectionTitle">Answers to the questions people ask before they adopt the workflow.</h1>
+        <p>
+          This page gives Google and prospective users a stable indexable resource for the main product questions:
+          what TLDR does, who it helps, which image formats it supports, and how the export workflow behaves.
+        </p>
+      </section>
+    
+      <section class="contentSection" aria-labelledby="faq-list-title">
+        <span class="fieldLabel">Frequently Asked Questions</span>
+        <h2 id="faq-list-title">Common TLDR questions</h2>
+            <div class="faqList">
+          <details class="faqItem" open>
+            <summary class="faqItemSummary"><span class="faqItemTitle">What is TLDR and what does it do?</span></summary>
+            <div class="faqItemBody"><p class="faqItemAnswer">TLDR is an image workflow app that renames files, optimizes image size and format, and generates metadata including titles, alt text, captions, and descriptions in one workflow. It turns raw image folders into web-ready assets with far less manual work.</p></div>
+          </details>
+          <details class="faqItem" open>
+            <summary class="faqItemSummary"><span class="faqItemTitle">How does TLDR handle bulk image processing?</span></summary>
+            <div class="faqItemBody"><p class="faqItemAnswer">TLDR is built for batch processing at scale. Teams can upload large image sets, preview changes, apply bulk renaming and optimization, and export everything in one run, saving hours of manual work per project.</p></div>
+          </details>
+          <details class="faqItem" open>
+            <summary class="faqItemSummary"><span class="faqItemTitle">Who is TLDR designed for?</span></summary>
+            <div class="faqItemBody"><p class="faqItemAnswer">TLDR is designed for ecommerce teams, marketers, content managers, and web teams that need optimized, properly labeled images without manual cleanup. It is a strong fit for product listings, blog content, landing pages, and campaign assets.</p></div>
+          </details>
+          <details class="faqItem" open>
+            <summary class="faqItemSummary"><span class="faqItemTitle">Does TLDR generate alt text automatically?</span></summary>
+            <div class="faqItemBody"><p class="faqItemAnswer">Yes. TLDR generates descriptive alt text, captions, and other image metadata automatically. That helps teams improve accessibility and publish more consistent image content faster.</p></div>
+          </details>
+          <details class="faqItem" open>
+            <summary class="faqItemSummary"><span class="faqItemTitle">Can TLDR help with image SEO workflows?</span></summary>
+            <div class="faqItemBody"><p class="faqItemAnswer">TLDR supports image SEO workflows by generating descriptive filenames, lighter exports, and structured metadata that teams can review before publishing. It reduces repetitive prep work, but teams still control what gets shipped.</p></div>
+          </details>
+          <details class="faqItem" open>
+            <summary class="faqItemSummary"><span class="faqItemTitle">Does TLDR keep original image files unchanged?</span></summary>
+            <div class="faqItemBody"><p class="faqItemAnswer">Yes. TLDR exports processed copies and leaves the original source files untouched, which makes it safer to use in production content workflows.</p></div>
+          </details>
+          <details class="faqItem" open>
+            <summary class="faqItemSummary"><span class="faqItemTitle">What image formats does TLDR support?</span></summary>
+            <div class="faqItemBody"><p class="faqItemAnswer">TLDR supports JPG, JPEG, PNG, WebP, GIF, BMP, TIFF, and AVIF image files.</p></div>
+          </details>
+          <details class="faqItem" open>
+            <summary class="faqItemSummary"><span class="faqItemTitle">How is TLDR different from doing this manually or using Photoshop?</span></summary>
+            <div class="faqItemBody"><p class="faqItemAnswer">Manual renaming, optimization, and metadata entry are slow, inconsistent, and hard to scale. TLDR handles file naming, compression, format conversion, and metadata generation in one place, so teams move faster with fewer errors.</p></div>
+          </details>
+        </div>
+      </section>
+    
+      <section class="contentCallout" aria-labelledby="faq-next-step-title">
+        <span class="fieldLabel">Next Step</span>
+        <h2 id="faq-next-step-title">Need implementation details?</h2>
+        <p>Browse feature coverage or reach out directly if you want the desktop app and workflow specifics.</p>
+        <p><a href="/features/">Review TLDR features</a> and <a href="/contact/">contact TLDR</a>.</p>
+      </section>
+    </main>
+    
+    <footer class="marketingFooter" aria-labelledby="footer-title">
+      <div class="footerShell">
+        <div class="siteFooterRow siteFooterBody">
+          <div class="siteFooterTopRow">
+            <p id="footer-title" class="brand marketingBrand">TLDR</p>
+            <div class="siteFooterMetaRow">
+              <div class="footerLinks">
+                <a class="footerLink" href="/features/">Features</a>
+                <a class="footerLink" href="/use-cases/">Use Cases</a>
+                <a class="footerLink" href="/faq/" aria-current="page">FAQ</a>
+                <a class="footerLink" href="/contact/">Contact</a>
+              </div>
+              <span class="siteFooterMetaSeparator" aria-hidden="true">•</span>
+              <p class="footerCopyright">© <span data-current-year>2026</span></p>
+            </div>
+          </div>
+          <p class="footerMeta">Automated image file renaming, optimization, and generated metadata.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

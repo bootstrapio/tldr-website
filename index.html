@@ -14,7 +14,9 @@
     <meta name="googlebot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
     <meta name="bingbot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
     <meta name="theme-color" content="#f8f9ff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
     <link rel="canonical" href="https://tldr.is/" />
+    <link rel="manifest" href="/site.webmanifest" />
     <link rel="alternate" type="text/markdown" href="https://tldr.is/llms.txt" title="LLMs.txt for TLDR" />
     <link rel="icon" type="image/avif" href="./assets/icons/icon-64.avif" sizes="64x64" />
     <link rel="icon" type="image/png" href="./assets/icons/icon-64.png" sizes="64x64" />
@@ -37,10 +39,7 @@
     <meta property="og:image:type" content="image/webp" />
     <meta property="og:image:width" content="1192" />
     <meta property="og:image:height" content="768" />
-    <meta
-      property="og:image"
-      content="https://tldr.is/assets/images/laptop-screen-asset-list.webp"
-    />
+    <meta property="og:image" content="https://tldr.is/assets/images/laptop-screen-asset-list.webp" />
     <meta
       property="og:image:alt"
       content="TLDR shown on a laptop with 13 optimized image assets and generated filename, title, alt text, caption, and description columns"
@@ -51,10 +50,7 @@
       name="twitter:description"
       content="Rename images, optimize files, and generate structured metadata in one AI-powered desktop workflow."
     />
-    <meta
-      name="twitter:image"
-      content="https://tldr.is/assets/images/laptop-screen-asset-list.webp"
-    />
+    <meta name="twitter:image" content="https://tldr.is/assets/images/laptop-screen-asset-list.webp" />
     <meta
       name="twitter:image:alt"
       content="TLDR shown on a laptop with 13 optimized image assets and generated filename, title, alt text, caption, and description columns"
@@ -87,11 +83,6 @@
             "logo": {
               "@type": "ImageObject",
               "url": "https://tldr.is/assets/icons/icon-64.png"
-            },
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "contactType": "sales",
-              "email": "hello@tldr.is"
             }
           },
           {
@@ -236,8 +227,17 @@
       onload="this.onload=null;this.rel='stylesheet'"
     />
     <noscript><link rel="stylesheet" href="./website.css" /></noscript>
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-NB5PBRTC');
+    </script>
+    <script src="./site.js" defer></script>
   </head>
   <body id="top">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NB5PBRTC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="skipLink" href="#main-content">Skip to content</a>
     <header>
       <nav class="marketingNav" aria-label="Primary site navigation">
@@ -248,11 +248,7 @@
           </a>
           <p class="marketingNavMeta">Automated image file renaming, optimization, and generated metadata.</p>
           <div class="marketingNavActions">
-            <a
-              class="primaryAction"
-              href="#one-last-thing"
-              aria-label="Scroll to the One Last Thing section"
-            >
+            <a class="primaryAction" href="#one-last-thing">
               <span class="iconGlyph" aria-hidden="true">✦</span>
               <span>Get Started</span>
             </a>
@@ -260,7 +256,6 @@
         </div>
       </nav>
     </header>
-
     <main id="main-content" class="marketingShell">
       <section
         class="heroSection"
@@ -291,7 +286,7 @@
               </a>
             </div>
           </article>
-
+    
           <figure class="heroSectionMedia">
             <div class="heroSectionFrame">
               <picture>
@@ -314,7 +309,7 @@
           </figure>
         </div>
       </section>
-
+    
       <section
         class="marketingSection imageWorkflowSection"
         id="image-workflow-automation"
@@ -327,8 +322,11 @@
           <p id="image-workflow-description" class="sectionText">
             TLDR handles the repeated steps behind every image so every file is renamed, optimized, and ready to use.
           </p>
+          <p class="sectionLinkRow">
+            <a href="/features/">Explore TLDR features</a>
+          </p>
         </header>
-
+    
         <div class="imageWorkflowGrid" aria-label="TLDR feature highlights">
           <article
             class="featureCard imageWorkflowCard imageWorkflowCardWide imageWorkflowCardLight"
@@ -344,10 +342,10 @@
               </p>
             </header>
             <ul class="imageWorkflowChipRow" aria-label="Filename example">
-              <li><span class="imageWorkflowChip imageWorkflowChipLiteral">iMaGe01.jpg → modern-blue-office-interior.jpg</span></li>
+              <li><span class="imageWorkflowChip imageWorkflowChipLiteral">iMaGe01.jpg -> modern-blue-office-interior.jpg</span></li>
             </ul>
           </article>
-
+    
           <article
             class="featureCard imageWorkflowCard imageWorkflowCardTall imageWorkflowCardPrimary"
             aria-labelledby="feature-image-optimization-title"
@@ -361,10 +359,10 @@
               </p>
             </header>
             <ul class="imageWorkflowChipRow" aria-label="Optimization example">
-              <li><span class="imageWorkflowChip">10MB JPG → 256KB WEBP</span></li>
+              <li><span class="imageWorkflowChip">10MB JPG -> 256KB WEBP</span></li>
             </ul>
           </article>
-
+    
           <article
             class="featureCard imageWorkflowCard imageWorkflowCardCompact imageWorkflowCardSoft"
             aria-labelledby="feature-generated-metadata-title"
@@ -384,7 +382,7 @@
               <li><span class="imageWorkflowChip">Title</span></li>
             </ul>
           </article>
-
+    
           <article
             class="featureCard imageWorkflowCard imageWorkflowCardFlow sectionPanel"
             aria-labelledby="feature-batch-processing-title"
@@ -405,7 +403,7 @@
           </article>
         </div>
       </section>
-
+    
       <section
         class="marketingSection useCaseSection"
         id="image-workflow-use-cases"
@@ -419,8 +417,11 @@
             TLDR fits image-heavy workflows where filenames, file size, and metadata directly affect speed,
             accessibility, and search visibility.
           </p>
+          <p class="sectionLinkRow">
+            <a href="/use-cases/">See detailed use cases</a>
+          </p>
         </header>
-
+    
         <div class="useCaseLayout">
           <figure class="useCaseMedia">
             <div class="useCaseFrame">
@@ -440,7 +441,7 @@
               </picture>
             </div>
           </figure>
-
+    
           <div class="useCaseList" aria-label="TLDR use cases">
             <article class="useCaseItem" aria-labelledby="use-case-ecommerce-name">
               <span class="fieldLabel" id="use-case-ecommerce-name">Ecommerce</span>
@@ -450,7 +451,7 @@
                 go into Shopify, WooCommerce, or marketplace listings.
               </p>
             </article>
-
+    
             <article class="useCaseItem" aria-labelledby="use-case-real-estate-name">
               <span class="fieldLabel" id="use-case-real-estate-name">Real Estate</span>
               <p class="useCaseTitle">Listing-ready photos without the manual work.</p>
@@ -459,7 +460,7 @@
                 keeping every listing fast, searchable, and professionally presented.
               </p>
             </article>
-
+    
             <article class="useCaseItem" aria-labelledby="use-case-agencies-name">
               <span class="fieldLabel" id="use-case-agencies-name">Agencies</span>
               <p class="useCaseTitle">Consistent image delivery across every client.</p>
@@ -471,7 +472,7 @@
           </div>
         </div>
       </section>
-
+    
       <section
         class="marketingSection"
         id="image-workflow-process"
@@ -486,7 +487,7 @@
             stay untouched.
           </p>
         </header>
-
+    
         <figure class="automationCtaMedia">
           <picture>
             <source srcset="./assets/images/laptop-screen-asset-list.avif" type="image/avif" />
@@ -500,7 +501,7 @@
             />
           </picture>
         </figure>
-
+    
         <div class="workflowTimeline" aria-label="TLDR workflow steps">
           <article class="workflowItem" aria-labelledby="workflow-step-1-title">
             <div class="workflowMarker" aria-hidden="true">
@@ -514,7 +515,7 @@
               </p>
             </div>
           </article>
-
+    
           <article class="workflowItem" aria-labelledby="workflow-step-2-title">
             <div class="workflowMarker" aria-hidden="true">
               <span class="workflowDot">02</span>
@@ -527,7 +528,7 @@
               </p>
             </div>
           </article>
-
+    
           <article class="workflowItem" aria-labelledby="workflow-step-3-title">
             <div class="workflowMarker" aria-hidden="true">
               <span class="workflowDot">03</span>
@@ -540,7 +541,7 @@
               </p>
             </div>
           </article>
-
+    
           <article class="workflowItem" aria-labelledby="workflow-step-4-title">
             <div class="workflowMarker" aria-hidden="true">
               <span class="workflowDot">04</span>
@@ -555,7 +556,7 @@
           </article>
         </div>
       </section>
-
+    
       <section
         class="marketingSection automationCtaSection"
         id="automation-trial-cta"
@@ -582,7 +583,7 @@
           </div>
         </div>
       </section>
-
+    
       <section
         class="marketingSection"
         id="image-workflow-faq"
@@ -595,9 +596,12 @@
           <p id="faq-description" class="sectionText">
             See how TLDR helps ecommerce, content, and marketing teams prepare images faster.
           </p>
+          <p class="sectionLinkRow">
+            <a href="/faq/">Read the full TLDR FAQ</a>
+          </p>
         </header>
-
-        <div class="faqList">
+    
+            <div class="faqList">
           <details class="faqItem" open itemscope itemtype="https://schema.org/Question">
             <summary class="faqItemSummary">
               <span class="faqItemTitle" itemprop="name">What is TLDR and what does it do?</span>
@@ -606,14 +610,11 @@
             <div class="faqItemBody">
               <p class="faqItemAnswer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <span itemprop="text">
-                  TLDR is an image workflow app that renames files, optimizes image size and format, and generates
-                  metadata including titles, alt text, captions, and descriptions in one workflow. It turns raw image
-                  folders into web-ready assets with far less manual work.
+                  TLDR is an image workflow app that renames files, optimizes image size and format, and generates metadata including titles, alt text, captions, and descriptions in one workflow. It turns raw image folders into web-ready assets with far less manual work.
                 </span>
               </p>
             </div>
           </details>
-
           <details class="faqItem" open itemscope itemtype="https://schema.org/Question">
             <summary class="faqItemSummary">
               <span class="faqItemTitle" itemprop="name">How does TLDR handle bulk image processing?</span>
@@ -622,14 +623,11 @@
             <div class="faqItemBody">
               <p class="faqItemAnswer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <span itemprop="text">
-                  TLDR is built for batch processing at scale. Teams can upload large image sets, preview changes,
-                  apply bulk renaming and optimization, and export everything in one run, saving hours of manual work
-                  per project.
+                  TLDR is built for batch processing at scale. Teams can upload large image sets, preview changes, apply bulk renaming and optimization, and export everything in one run, saving hours of manual work per project.
                 </span>
               </p>
             </div>
           </details>
-
           <details class="faqItem" open itemscope itemtype="https://schema.org/Question">
             <summary class="faqItemSummary">
               <span class="faqItemTitle" itemprop="name">Who is TLDR designed for?</span>
@@ -638,14 +636,11 @@
             <div class="faqItemBody">
               <p class="faqItemAnswer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <span itemprop="text">
-                  TLDR is designed for ecommerce teams, marketers, content managers, and web teams that need
-                  optimized, properly labeled images without manual cleanup. It is a strong fit for product listings,
-                  blog content, landing pages, and campaign assets.
+                  TLDR is designed for ecommerce teams, marketers, content managers, and web teams that need optimized, properly labeled images without manual cleanup. It is a strong fit for product listings, blog content, landing pages, and campaign assets.
                 </span>
               </p>
             </div>
           </details>
-
           <details class="faqItem" open itemscope itemtype="https://schema.org/Question">
             <summary class="faqItemSummary">
               <span class="faqItemTitle" itemprop="name">Does TLDR generate alt text automatically?</span>
@@ -654,13 +649,11 @@
             <div class="faqItemBody">
               <p class="faqItemAnswer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <span itemprop="text">
-                  Yes. TLDR generates descriptive alt text, captions, and other image metadata automatically. That
-                  helps teams improve accessibility and publish more consistent image content faster.
+                  Yes. TLDR generates descriptive alt text, captions, and other image metadata automatically. That helps teams improve accessibility and publish more consistent image content faster.
                 </span>
               </p>
             </div>
           </details>
-
           <details class="faqItem" open itemscope itemtype="https://schema.org/Question">
             <summary class="faqItemSummary">
               <span class="faqItemTitle" itemprop="name">Can TLDR help with image SEO workflows?</span>
@@ -669,14 +662,11 @@
             <div class="faqItemBody">
               <p class="faqItemAnswer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <span itemprop="text">
-                  TLDR supports image SEO workflows by generating descriptive filenames, lighter exports, and
-                  structured metadata that teams can review before publishing. It reduces repetitive prep work, but
-                  teams still control what gets shipped.
+                  TLDR supports image SEO workflows by generating descriptive filenames, lighter exports, and structured metadata that teams can review before publishing. It reduces repetitive prep work, but teams still control what gets shipped.
                 </span>
               </p>
             </div>
           </details>
-
           <details class="faqItem" open itemscope itemtype="https://schema.org/Question">
             <summary class="faqItemSummary">
               <span class="faqItemTitle" itemprop="name">Does TLDR keep original image files unchanged?</span>
@@ -685,13 +675,11 @@
             <div class="faqItemBody">
               <p class="faqItemAnswer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <span itemprop="text">
-                  Yes. TLDR exports processed copies and leaves the original source files untouched, which makes it
-                  safer to use in production content workflows.
+                  Yes. TLDR exports processed copies and leaves the original source files untouched, which makes it safer to use in production content workflows.
                 </span>
               </p>
             </div>
           </details>
-
           <details class="faqItem" open itemscope itemtype="https://schema.org/Question">
             <summary class="faqItemSummary">
               <span class="faqItemTitle" itemprop="name">What image formats does TLDR support?</span>
@@ -705,7 +693,6 @@
               </p>
             </div>
           </details>
-
           <details class="faqItem" open itemscope itemtype="https://schema.org/Question">
             <summary class="faqItemSummary">
               <span class="faqItemTitle" itemprop="name">How is TLDR different from doing this manually or using Photoshop?</span>
@@ -714,16 +701,14 @@
             <div class="faqItemBody">
               <p class="faqItemAnswer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <span itemprop="text">
-                  Manual renaming, optimization, and metadata entry are slow, inconsistent, and hard to scale. TLDR
-                  handles file naming, compression, format conversion, and metadata generation in one place, so teams
-                  move faster with fewer errors.
+                  Manual renaming, optimization, and metadata entry are slow, inconsistent, and hard to scale. TLDR handles file naming, compression, format conversion, and metadata generation in one place, so teams move faster with fewer errors.
                 </span>
               </p>
             </div>
           </details>
         </div>
       </section>
-
+    
       <section
         class="marketingSection closingBanner"
         id="one-last-thing"
@@ -752,6 +737,7 @@
         </div>
       </section>
     </main>
+    
     <footer class="marketingFooter" aria-labelledby="footer-title">
       <div class="footerShell">
         <div class="siteFooterRow siteFooterBody">
@@ -759,9 +745,10 @@
             <p id="footer-title" class="brand marketingBrand">TLDR</p>
             <div class="siteFooterMetaRow">
               <div class="footerLinks">
-                <address class="footerContact">
-                  <a href="mailto:hello@tldr.is" rel="nofollow">Contact Us</a>
-                </address>
+                <a class="footerLink" href="/features/">Features</a>
+                <a class="footerLink" href="/use-cases/">Use Cases</a>
+                <a class="footerLink" href="/faq/">FAQ</a>
+                <a class="footerLink" href="/contact/">Contact</a>
               </div>
               <span class="siteFooterMetaSeparator" aria-hidden="true">•</span>
               <p class="footerCopyright">© <span data-current-year>2026</span></p>
@@ -771,10 +758,5 @@
         </div>
       </div>
     </footer>
-    <script>
-      document.querySelectorAll("[data-current-year]").forEach((node) => {
-        node.textContent = String(new Date().getFullYear());
-      });
-    </script>
   </body>
 </html>
