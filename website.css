@@ -1219,6 +1219,7 @@ button:disabled {
   border: 1px solid rgba(17, 17, 17, 0.08);
   text-align: center;
   box-shadow: var(--shadow-ambient);
+  width: 100%;
 }
 
 .closingBannerTitle {
@@ -1442,6 +1443,157 @@ button:disabled {
   border-radius: 20px;
   background: linear-gradient(135deg, rgba(15, 98, 254, 0.08), rgba(255, 255, 255, 0.96));
   border: 1px solid rgba(15, 98, 254, 0.16);
+}
+
+.smsOptIn {
+  display: grid;
+  gap: 20px;
+}
+
+.smsFormPanel {
+  align-items: flex-start;
+  text-align: left;
+  width: 100%;
+}
+
+.smsOptInForm {
+  display: grid;
+  gap: 14px;
+  width: 100%;
+}
+
+.smsOptInFormInline {
+  margin-top: 8px;
+}
+
+.smsFormFields {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.smsPhoneLabel {
+  display: grid;
+  gap: 6px;
+  flex: 1 1 200px;
+  min-width: 0;
+}
+
+.smsPhoneLabelText {
+  font-size: var(--font-button);
+  font-weight: 600;
+  letter-spacing: var(--tracking);
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.smsPhoneInput {
+  height: 52px;
+  padding: 0 14px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(15, 23, 42, 0.18);
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--text-body);
+  font-size: 1rem;
+  width: 100%;
+  outline: none;
+  transition: border-color 140ms ease, box-shadow 140ms ease;
+}
+
+.smsPhoneInput:focus {
+  border-color: var(--primary-strong);
+  box-shadow: 0 0 0 3px rgba(15, 98, 254, 0.12);
+}
+
+.smsSubmitButton {
+  flex: 0 0 auto;
+  min-width: 130px;
+  height: 52px;
+  min-height: 52px;
+}
+
+.smsConsentLabel {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.smsConsentCheckbox {
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  accent-color: var(--primary-strong);
+  cursor: pointer;
+}
+
+.smsConsentText {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: inherit;
+}
+
+.smsLegalText {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.smsLegalText a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.smsSuccessText {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1a7a4a;
+  margin: 0;
+}
+
+.closingBannerPanel .smsPhoneLabelText {
+  color: #111111;
+}
+
+.closingBannerPanel .smsPhoneInput {
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.closingBannerPanel .smsLegalText {
+  color: rgba(17, 17, 17, 0.65);
+}
+
+.closingBannerPanel .smsLegalText a {
+  color: rgba(17, 17, 17, 0.8);
+}
+
+.closingBannerPanel .smsConsentText {
+  color: #111111;
+}
+
+.footerLegal {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.footerLegalLink {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footerLegalText {
+  color: var(--text-muted);
 }
 
 .faqPageHero {

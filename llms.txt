@@ -1,9 +1,9 @@
-# TLDR
+# Bootstrap
 
-> TLDR is a desktop app for AI image renaming, image optimization, and generated metadata.
+> Bootstrap is a desktop app for AI image renaming, image optimization, and generated metadata.
 
 - Canonical URL: https://tldr.is/
-- Product: TLDR
+- Product: Bootstrap
 - Category: AI image workflow software
 - Best for: ecommerce teams, content teams, marketers, and WordPress workflows
 - Main capabilities: descriptive filename generation, image optimization, WebP exports, alt text generation, caption generation, title generation, description generation, batch processing, preview before export

@@ -1,6 +1,6 @@
 {
-  "name": "TLDR",
-  "short_name": "TLDR",
+  "name": "Bootstrap",
+  "short_name": "Bootstrap",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f8f9ff",

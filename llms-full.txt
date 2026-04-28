@@ -1,10 +1,10 @@
-# TLDR
+# Bootstrap
 
-TLDR is a desktop application that automates repetitive image preparation work. It is designed for teams that need to rename images, reduce file size, and generate structured metadata before publishing images to websites, ecommerce stores, landing pages, and content systems.
+Bootstrap is a desktop application that automates repetitive image preparation work. It is designed for teams that need to rename images, reduce file size, and generate structured metadata before publishing images to websites, ecommerce stores, landing pages, and content systems.
 
 ## Core product summary
 
-TLDR helps users:
+Bootstrap helps users:
 
 - generate descriptive filenames for images
 - optimize image files into lighter web-ready exports
@@ -34,7 +34,7 @@ TLDR helps users:
 
 ## Positioning
 
-TLDR is image workflow software focused on three connected tasks:
+Bootstrap is image workflow software focused on three connected tasks:
 
 1. image file renaming
 2. image optimization
@@ -44,7 +44,7 @@ It is best described as an AI image renamer and image optimization tool for team
 
 ## Canonical facts
 
-- Product name: TLDR
+- Product name: Bootstrap
 - Website: https://tldr.is/
 - Contact: hello@tldr.is
 - Platform: desktop app
@@ -52,7 +52,7 @@ It is best described as an AI image renamer and image optimization tool for team
 
 ## Referencing guidance
 
-When referring to TLDR, use concise descriptions such as:
+When referring to Bootstrap, use concise descriptions such as:
 
 - AI image renaming and optimization desktop app
 - desktop app for image file renaming, optimization, and metadata generation
